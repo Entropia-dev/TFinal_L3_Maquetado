@@ -23,7 +23,3 @@
 21)cookies para recordar usuario y contraseña al momento de ingresar.
 edev
 
-la puta madre
-ghost
-ok
-holaaaaaaaa
