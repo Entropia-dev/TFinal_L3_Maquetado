@@ -23,9 +23,7 @@ namespace Vistas.YaMaquetado
             if (estado == true)
             {
                 Session["Alias"] = txtAlias.Text;
-              
-
-                Response.Redirect("Cuenta.aspx");
+                Response.Redirect("index.aspx");
             }
             else
             {

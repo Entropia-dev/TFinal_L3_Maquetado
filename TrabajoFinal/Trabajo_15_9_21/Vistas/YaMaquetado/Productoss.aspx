@@ -7,7 +7,7 @@
         <div class="col login">
         <h1 class="h3 mb-3 fw-normal text-center">Nuestros productos</h1>
             <asp:ListView ID="ListView1" runat="server" DataSourceID="SqlDataSource1"></asp:ListView>
-            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:RevestimientoaytConnectionString %>" SelectCommand="SELECT * FROM [Productos]"></asp:SqlDataSource>
+            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:RevestimientoaytConnectionString %>" SelectCommand="SELECT [Stock], [PU_Pro], [Descripcion] FROM [Productos]"></asp:SqlDataSource>
         </div>
         <div class="col"></div>
     </div>
