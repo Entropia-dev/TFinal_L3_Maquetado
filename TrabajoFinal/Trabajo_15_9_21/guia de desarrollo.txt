@@ -8,6 +8,7 @@ Generar carga de productos.
 Averiguar como cargar imagenes en sql
 Cargar productos a la base de datos ahiti
 Dejar funcional el buscador de productos
+Generar procedimiento almacenado para cuando se solicita un presupuesto
 -----------------------------------------------------------
 notas importantes
 paginacion de las tablas que mostraba.
