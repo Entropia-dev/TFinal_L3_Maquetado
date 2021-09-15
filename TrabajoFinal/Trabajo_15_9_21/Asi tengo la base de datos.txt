@@ -211,3 +211,31 @@ Email varchar(50),
 Consulta varchar(50),
 ID int IDENTITY(1,1) PRIMARY KEY,
 )
+
+ADEMAS AGREGAR EL PROCEDIMIENTO ALMACENADO	
+CREATE PROCEDURE spinsertarprod
+(
+@PU_Pro Decimal,
+@Cod_art_pro decimal,
+@stock int,
+@categoria char(30),
+@descripcion varchar(30)
+)
+AS
+INSERT INTO Productos
+(
+PU_Pro,
+Cod_Art_Pro,
+Stock,
+Categoria,
+Descripcion
+)
+VALUES
+(
+@PU_Pro,
+@Cod_art_pro,
+@stock,
+@categoria,
+@descripcion
+)RETURN
+go
