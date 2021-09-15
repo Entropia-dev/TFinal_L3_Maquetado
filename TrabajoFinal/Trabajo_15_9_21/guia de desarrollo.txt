@@ -1,6 +1,6 @@
-Mover lo programado al trabajo maquetado. (En proceso)
+Mover lo programado al trabajo maquetado. (En proceso) como por ejemplo las referencias, osea a donde van dirigidas las paginas. 
 Algunas observaciones.
-una vez registrado el usuario redirecciona a una pestaña del trabajo anterior (corregir)
+////una vez registrado el usuario redirecciona a una pestaña del trabajo anterior (Completado)////
 configurar mostrar el usuario logueado correctamente (sobre escribir el label con alguna variable session.)
 El nombre del registro no toma nombres completos por ejemplo "Federico Ivan"
 Averiguar como mostrar los productos paginados.
