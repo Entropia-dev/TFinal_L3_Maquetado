@@ -15,3 +15,8 @@ paginacion de las tablas que mostraba.
 el buscador en todas las ventanas.
 que aparezca el usuario logueado en todas las ventanas.
 guardar los productos en un carrito previo a la venta.
+ ***************************************
+Jere
+Registrarse:
+se debe reducir al 90% para que se vea el boton de "registrarse"
+************************************

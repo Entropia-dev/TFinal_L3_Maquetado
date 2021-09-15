@@ -16,3 +16,9 @@ C:\Users\RyoGaGotoku\Downloads\Telegram Desktop\TrabajoFinal\Entidades\obj\Debug
 C:\Users\RyoGaGotoku\Downloads\Telegram Desktop\TrabajoFinal\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
 C:\Users\RyoGaGotoku\Downloads\Telegram Desktop\TrabajoFinal\Entidades\obj\Debug\Entidades.dll
 C:\Users\RyoGaGotoku\Downloads\Telegram Desktop\TrabajoFinal\Entidades\obj\Debug\Entidades.pdb
+C:\Users\Windows 10 Pro\source\repos\TP1_ Rehecho\TFinal_L3_Maquetado\TrabajoFinal\Trabajo_15_9_21\Entidades\bin\Debug\Entidades.dll
+C:\Users\Windows 10 Pro\source\repos\TP1_ Rehecho\TFinal_L3_Maquetado\TrabajoFinal\Trabajo_15_9_21\Entidades\bin\Debug\Entidades.pdb
+C:\Users\Windows 10 Pro\source\repos\TP1_ Rehecho\TFinal_L3_Maquetado\TrabajoFinal\Trabajo_15_9_21\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache
+C:\Users\Windows 10 Pro\source\repos\TP1_ Rehecho\TFinal_L3_Maquetado\TrabajoFinal\Trabajo_15_9_21\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\Windows 10 Pro\source\repos\TP1_ Rehecho\TFinal_L3_Maquetado\TrabajoFinal\Trabajo_15_9_21\Entidades\obj\Debug\Entidades.dll
+C:\Users\Windows 10 Pro\source\repos\TP1_ Rehecho\TFinal_L3_Maquetado\TrabajoFinal\Trabajo_15_9_21\Entidades\obj\Debug\Entidades.pdb

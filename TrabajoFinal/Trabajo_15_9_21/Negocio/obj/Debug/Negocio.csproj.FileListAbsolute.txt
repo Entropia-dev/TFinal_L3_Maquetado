@@ -42,3 +42,14 @@ C:\Users\RyoGaGotoku\Downloads\Telegram Desktop\TrabajoFinal\Negocio\obj\Debug\N
 C:\Users\RyoGaGotoku\Downloads\Telegram Desktop\TrabajoFinal\Negocio\obj\Debug\Negocio.csproj.CopyComplete
 C:\Users\RyoGaGotoku\Downloads\Telegram Desktop\TrabajoFinal\Negocio\obj\Debug\Negocio.dll
 C:\Users\RyoGaGotoku\Downloads\Telegram Desktop\TrabajoFinal\Negocio\obj\Debug\Negocio.pdb
+C:\Users\Windows 10 Pro\source\repos\TP1_ Rehecho\TFinal_L3_Maquetado\TrabajoFinal\Trabajo_15_9_21\Negocio\bin\Debug\Negocio.dll
+C:\Users\Windows 10 Pro\source\repos\TP1_ Rehecho\TFinal_L3_Maquetado\TrabajoFinal\Trabajo_15_9_21\Negocio\bin\Debug\Negocio.pdb
+C:\Users\Windows 10 Pro\source\repos\TP1_ Rehecho\TFinal_L3_Maquetado\TrabajoFinal\Trabajo_15_9_21\Negocio\bin\Debug\Dao.dll
+C:\Users\Windows 10 Pro\source\repos\TP1_ Rehecho\TFinal_L3_Maquetado\TrabajoFinal\Trabajo_15_9_21\Negocio\bin\Debug\Entidades.dll
+C:\Users\Windows 10 Pro\source\repos\TP1_ Rehecho\TFinal_L3_Maquetado\TrabajoFinal\Trabajo_15_9_21\Negocio\bin\Debug\Dao.pdb
+C:\Users\Windows 10 Pro\source\repos\TP1_ Rehecho\TFinal_L3_Maquetado\TrabajoFinal\Trabajo_15_9_21\Negocio\bin\Debug\Entidades.pdb
+C:\Users\Windows 10 Pro\source\repos\TP1_ Rehecho\TFinal_L3_Maquetado\TrabajoFinal\Trabajo_15_9_21\Negocio\obj\Debug\Negocio.csprojAssemblyReference.cache
+C:\Users\Windows 10 Pro\source\repos\TP1_ Rehecho\TFinal_L3_Maquetado\TrabajoFinal\Trabajo_15_9_21\Negocio\obj\Debug\Negocio.csproj.CoreCompileInputs.cache
+C:\Users\Windows 10 Pro\source\repos\TP1_ Rehecho\TFinal_L3_Maquetado\TrabajoFinal\Trabajo_15_9_21\Negocio\obj\Debug\Negocio.csproj.CopyComplete
+C:\Users\Windows 10 Pro\source\repos\TP1_ Rehecho\TFinal_L3_Maquetado\TrabajoFinal\Trabajo_15_9_21\Negocio\obj\Debug\Negocio.dll
+C:\Users\Windows 10 Pro\source\repos\TP1_ Rehecho\TFinal_L3_Maquetado\TrabajoFinal\Trabajo_15_9_21\Negocio\obj\Debug\Negocio.pdb

@@ -31,7 +31,7 @@ namespace Vistas.YaMaquetado
                 lblMensaje.Text = "completado con exito";
                 Session["Alias"] = txtAlias;
 
-                Response.Redirect("Cuenta.aspx");
+                Response.Redirect("Logiin.aspx");
             }
             else
             {
