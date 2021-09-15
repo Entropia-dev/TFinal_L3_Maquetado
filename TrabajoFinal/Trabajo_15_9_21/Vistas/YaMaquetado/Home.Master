@@ -21,6 +21,9 @@
           <%--<div class="container">--%>
           <ul class="nav justify-content-center">
               <li class="nav-item">
+                    Ingresado como: <asp:Label ID="UsuarioLogueado" runat="server">Visitante</asp:Label>  
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" href="#">Clientes</a>
               </li>
               <li class="nav-item">

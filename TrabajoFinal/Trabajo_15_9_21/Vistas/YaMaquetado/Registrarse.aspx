@@ -15,7 +15,7 @@
         <div class="form"><asp:TextBox ID="txtContraseña" runat="server" class="form-control" placeholder="Contraseña" type="password"></asp:TextBox><asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server" ControlToValidate="txtContraseña" ErrorMessage="Complete su contraseña"></asp:RequiredFieldValidator></div>
         <div class="form"><asp:TextBox ID="txtRepContraseña" runat="server" class="form-control" placeholder="Repita contraseña" type="password"></asp:TextBox><asp:RequiredFieldValidator ID="RequiredFieldValidator9" runat="server" ControlToValidate="txtContraseña" ErrorMessage="Repita su contraseña"></asp:RequiredFieldValidator></div>
 
-        <asp:Button ID="btnRegistrar" runat="server" Text="Registrarse" class="w-100 btn btn-lg btn-primary mt-3" />
+        <asp:Button ID="btnRegistrar" runat="server" Text="Registrarse" class="w-100 btn btn-lg btn-primary mt-3" OnClick="btnRegistrar_Click" />
         <asp:Label ID="lblMensaje" runat="server"></asp:Label>
         </div>
         <div class="col"></div>
