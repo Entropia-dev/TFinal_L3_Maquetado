@@ -199,3 +199,15 @@ VALUES
 @Usuario_Cli
 )RETURN
 go
+
+
+IMPORTANTE ACTUALIZAR LA TABLA DE PRESUPUESTOS EN LA BASE DE DATOS!!!
+
+create table Presupuestos(
+Alias varchar(50),
+Telefono varchar(50),
+Localidad varchar(50),
+Email varchar(50),
+Consulta varchar(50),
+ID int IDENTITY(1,1) PRIMARY KEY,
+)
