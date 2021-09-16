@@ -20,3 +20,10 @@ Jere
 Registrarse:
 se debe reducir al 90% para que se vea el boton de "registrarse"
 ************************************
+
+sentencia sql para poder buscar productos.
+
+SELECT * FROM demo WHERE hint LIKE '%d%';
+
+Se utiliza primero select * (all) FROM (nombre de la tabla) demo WHERE hint (donde en hint se encuentre) un titulo que en algun lado contenga la letra
+"D"
