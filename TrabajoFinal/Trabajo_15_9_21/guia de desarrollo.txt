@@ -1,22 +1,36 @@
-Mover lo programado al trabajo maquetado. (En proceso) como por ejemplo las referencias, osea a donde van dirigidas las paginas. 
+Mover lo programado al trabajo maquetado. (En proceso) como por ejemplo las referencias, osea a donde van dirigidas las paginas.
+ 
 Algunas observaciones.
 ////una vez registrado el usuario redirecciona a una pestaña del trabajo anterior (Completado)////
+
 configurar mostrar el usuario logueado correctamente (sobre escribir el label con alguna variable session.)
+
 El nombre del registro no toma nombres completos por ejemplo "Federico Ivan"
+
 Averiguar como mostrar los productos paginados.
 Generar carga de productos.
+
 Averiguar como cargar imagenes en sql
+
 Cargar productos a la base de datos ahiti
+
 Dejar funcional el buscador de productos
+
 Programar en capas la parte de presupuesto.
------------------------------------------------------------
+
 notas importantes
-paginacion de las tablas que mostraba.
-el buscador en todas las ventanas.
-que aparezca el usuario logueado en todas las ventanas.
-guardar los productos en un carrito previo a la venta.
- ***************************************
-Jere
+
+Paginacion de las tablas que mostraba.
+
+El buscador en todas las ventanas.
+
+Que aparezca el usuario logueado en todas las ventanas.
+
+Guardar los productos en un carrito previo a la venta.
+
 Registrarse:
-se debe reducir al 90% para que se vea el boton de "registrarse"
-************************************
+se debe reducir al 90% para que se vea el boton de "registrarse".
+
+<Armar los parametros para los Daos que faltan>
+
+
