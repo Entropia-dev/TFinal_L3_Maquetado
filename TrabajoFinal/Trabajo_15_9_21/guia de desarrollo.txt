@@ -3,7 +3,16 @@ Algunas observaciones.
 una vez registrado el usuario redirecciona a una pestaña del trabajo anterior (corregir)
 configurar mostrar el usuario logueado correctamente (sobre escribir el label con alguna variable session.)
 El nombre del registro no toma nombres completos por ejemplo "Federico Ivan"
-Averiguar como mostrar los productos paginados.
+Averiguar como mostrar los productos paginados. 
+
+IMPORTANTE
+
+//el listado de productos tiene que tener un buscador arriba o en algun lado y un boton de agregar al carrito en el lado de cliente
+el cliente tiene que poder ver los productos y proceder con la compra y solo ahi se registrara la venta.
+los productos tienen que estar listado de a 5 productos por pagina.
+
+//MOSTRAR EL NOMBRE DEL USUARIO LOGUEADO EN TODAS LAS PAGINAS HASTA QUE SE DESLOGUEA.
+
 Generar carga de productos.
 Averiguar como cargar imagenes en sql
 Cargar productos a la base de datos ahiti
