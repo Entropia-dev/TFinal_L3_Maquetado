@@ -28,3 +28,8 @@ AS
 DELETE FROM Productos
 WHERE Cod_Art_Pro = @Cod_Art_Pro
 return
+
+========================================================
+COMANDO PARA AGREGAR UNA URL DE IMAGEN A LA BASE DE DATOS !!!
+
+ALTER TABLE Productos add Url varchar(50);
