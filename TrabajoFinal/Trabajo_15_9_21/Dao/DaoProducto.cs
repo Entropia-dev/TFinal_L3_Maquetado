@@ -68,7 +68,28 @@ namespace Dao
             SqlParametros.Value = pro.get_nombre_producto();
         }
 
+        //me va a permitir actualizar los parametros de los productos
+        private void ArmarParametrosProductos(ref SqlCommand Comando , Productos prod)
+        {
+            SqlParameter SqlParametrosProducto = new SqlParameter();
+           
+            //actualiza el codigo de prodcuto
 
+            SqlParametrosProducto = Comando.Parameters.Add("@Cod_Art_Pro", SqlDbType.Char, 8);
+            SqlParametrosProducto.Value = prod.get_codigo_producto();
+            
+            //actualiza el precio de producto
+
+            SqlParametrosProducto = Comando.Parameters.Add("@PU_Pro", SqlDbType.Decimal, 8);
+            SqlParametrosProducto.Value = prod.get_precio_producto();
+
+            //actualiza el stock
+            SqlParametrosProducto = Comando.Parameters.Add("@Stock", sqlDbType.int);
+            SqlParametrosProducto.Value = prod.get_stock();
+
+            //PAUSA PARA VER COMO AGREGAR LA STRING PARA IMAGENES A LA BASE DE DATOS
+
+        }
         
     }
 }

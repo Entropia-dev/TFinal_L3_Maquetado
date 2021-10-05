@@ -14,12 +14,22 @@ namespace Entidades
         decimal precio_producto; //complteado
         bool estado;    //completado
         string url_imagen;  //completado
+        
+        //AGREGO LA VARIABLE STOCK PREVIAMENTE INEXSITENTE.
 
+        int stock;
+
+
+        //constructor vacio.
         public Productos()
         {
 
         }
 
+
+
+
+        //gets and sets.
         public void set_codigo_producto(string nuevo_codigo_producto)
         {
             this.codigo_producto = nuevo_codigo_producto;
@@ -69,5 +79,19 @@ namespace Entidades
         {
             return this.url_imagen;
         }
+
+        //GET Y SETS DE PRODUCTOS PREVIAMENTE INEXSITENTES.
+
+
+        public int get_stock()
+        {
+            return this.stock;
+        }
+
+        public void set_stock(int new_stock) 
+        {
+            this.stock = new_stock;
+        }
+
     }
 }
