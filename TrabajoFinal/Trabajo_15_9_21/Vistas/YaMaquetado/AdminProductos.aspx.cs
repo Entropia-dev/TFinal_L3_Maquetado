@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using Dao;
+
 
 namespace Vistas.YaMaquetado
 {
@@ -11,19 +13,18 @@ namespace Vistas.YaMaquetado
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if(IsPostBack == false)
+            {
+                cargarGridVew();
+            }
         }
 
-        protected void SqlDataSource1_Selecting(object sender, SqlDataSourceSelectingEventArgs e)
+        public void cargarGridVew()
         {
-
+            DaoProducto GestionProductos = new DaoProducto();
+            //obtengo todos los libros y los cargo sobre la grid view
+            grdProdAdmin.DataSource = GestionProductos.ObtenerTodosLosProductos();
+            grdProdAdmin.DataBind();
         }
-
-        protected void ListView1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        
     }
 }

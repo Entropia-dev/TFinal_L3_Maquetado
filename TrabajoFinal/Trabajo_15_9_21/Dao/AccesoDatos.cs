@@ -97,6 +97,11 @@ namespace Dao
             return max;
         }
 
+        public DataTable ObtenerTodosLosProductos()
+        {
+            return ObtenerTabla("Productos", "Select * From Productos");
+        }
+
     }
 
 }

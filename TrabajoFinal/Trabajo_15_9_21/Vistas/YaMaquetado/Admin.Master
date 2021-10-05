@@ -40,7 +40,11 @@
               </li>
               <li class="nav-item">
                 <%--<a class="nav-link" href="Productoss.aspx">Cerrar sesion</a>--%>
-                <asp:Button ID="Button4" runat="server" Height="35px" Text="Cerrar Sesion" Width="252px" class="nav-link"/>
+             
+                  
+               <%--    <asp:Button ID="Button4" runat="server" Height="35px" Text="Cerrar Sesion" Width="252px" class="nav-link" OnClick="Button4_Click"/> --%>
+              
+              
               </li>
             </ul>
             <%--</div>--%>

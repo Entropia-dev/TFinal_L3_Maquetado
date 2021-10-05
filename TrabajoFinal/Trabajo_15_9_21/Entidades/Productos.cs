@@ -42,7 +42,7 @@ namespace Entidades
 
         public void set_url_imagen(string new_image)
         {
-            this.url_imagen = new_image);
+            this.url_imagen = new_image;
         }
 
         public string get_url_imagen()
@@ -111,11 +111,7 @@ namespace Entidades
             return this.estado;
         }
 
-        public void  set_url_imagen(string nueva_url)
-        {
-            this.url_imagen = nueva_url;
-        }
-
+   
         public string get_codigo_imagen()
         {
             return this.url_imagen;
