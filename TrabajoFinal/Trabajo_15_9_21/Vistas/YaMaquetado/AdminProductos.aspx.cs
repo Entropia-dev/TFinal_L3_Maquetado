@@ -26,5 +26,7 @@ namespace Vistas.YaMaquetado
             grdProdAdmin.DataSource = GestionProductos.ObtenerTodosLosProductos();
             grdProdAdmin.DataBind();
         }
+
+     
     }
 }
