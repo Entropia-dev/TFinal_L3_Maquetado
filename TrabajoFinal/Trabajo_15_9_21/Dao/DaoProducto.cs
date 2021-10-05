@@ -102,6 +102,25 @@ namespace Dao
             SqlParametrosProducto.Value = prod.get_url_imagen();
 
         }
+
+
+
+        public bool actualizar_producto(Productos prod)
+        {
+            SqlCommand Comando = new SqlCommand();
+            ArmarParametrosProductos(ref Comando, prod);
+            AccesoDatos ad = new AccesoDatos();
+            int FilasInsertadas = ad.EjecutarProcedimientoAlmacenado(Comando , "spActualizarProducto");
+            if(FilasInsertadas == 1 )
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+
+        }
         
     }
 }
