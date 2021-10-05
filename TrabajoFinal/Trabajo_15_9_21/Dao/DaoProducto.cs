@@ -50,6 +50,16 @@ namespace Dao
             return tabla;
         }
 
+        private void ArmarParametrosProductoEliminar(ref SqlCommand Comando, Productos pro)
+        {
+            SqlParameter SqlParametros = new SqlParameter();
+            string aux = pro.get_codigo_producto();
+            SqlParametros.Value = aux;
+            SqlParametros = Comando.Parameters.Add("@Cod_Art_Pro", "aux");
+       
+          
+        }
+
         public bool eliminarProducto(Productos pro)
         {
             SqlCommand Comando = new SqlCommand();
@@ -76,12 +86,7 @@ namespace Dao
             return ds.EjecutarProcedimientoAlmacenado(comando, "spAgregarProducto");
         }
         */
-        private void ArmarParametrosProductoEliminar(ref SqlCommand Comando, Productos pro)
-        {
-            SqlParameter SqlParametros = new SqlParameter();
-            SqlParametros = Comando.Parameters.Add("@IDPRODUCTO", SqlDbType.Char);
-            SqlParametros.Value = pro.get_codigo_producto();
-        }
+
 
         private void ArmarParametrosProductoAgregar(ref SqlCommand Comando, Productos pro)
         {

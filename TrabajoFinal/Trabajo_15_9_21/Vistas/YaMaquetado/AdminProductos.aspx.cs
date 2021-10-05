@@ -51,7 +51,7 @@ namespace Vistas.YaMaquetado
             String s_codigoArtProducto = ((Label)grdProdAdmin.Rows[e.RowIndex].FindControl("lbl_it_CodigoArticulo")).Text;
            
             Productos prod = new Productos();
-            prod.set_codigo_producto(Convert.ToChar(s_codigoArtProducto));
+            prod.set_codigo_producto(s_codigoArtProducto);
             DaoProducto admProd = new DaoProducto();
          
             admProd.eliminarProducto(prod);

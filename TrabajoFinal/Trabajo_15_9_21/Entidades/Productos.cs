@@ -9,7 +9,7 @@ namespace Entidades
     //escribo todos los campos que va a tener la entidad.
     public class Productos
     {
-        char codigo_producto; //completado
+        string codigo_producto; //completado
         string nombre_producto; //completado nota , los productos no tienen nombre sino categoria.
         decimal precio_producto; //complteado
         bool estado;    //completado ¿inutilizado? no se utiliza el estado ¿no se va a poder dar baja logica?
@@ -71,12 +71,12 @@ namespace Entidades
             return this.categoria;
         }
         
-        public void set_codigo_producto(char nuevo_codigo_producto)
+        public void set_codigo_producto(string nuevo_codigo_producto)
         {
             this.codigo_producto = nuevo_codigo_producto;
         }
 
-        public char get_codigo_producto()
+        public string get_codigo_producto()
         {
             return this.codigo_producto;
         }
