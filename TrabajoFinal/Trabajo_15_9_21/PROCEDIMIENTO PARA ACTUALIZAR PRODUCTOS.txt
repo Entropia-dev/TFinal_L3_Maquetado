@@ -15,3 +15,16 @@ Categoria = @Categoria ,
 Descripcion = @Descripcion
 where Cod_Art_Pro = @Cod_Art_Pro
 return
+
+======================================================
+
+PROCEDIMIENTO PARA ELIMINAR PRODUCTO
+
+create procedure spEliminarProducto
+(
+@Cod_Art_Pro char(8)
+)
+AS
+DELETE FROM Productos
+WHERE Cod_Art_Pro = @Cod_Art_Pro
+return
