@@ -43,3 +43,12 @@ C:\Users\Windows 10 Pro\source\repos\TP1_ Rehecho\TFinal_L3_Maquetado\TrabajoFin
 C:\Users\Windows 10 Pro\source\repos\TP1_ Rehecho\TFinal_L3_Maquetado\TrabajoFinal\Trabajo_15_9_21\Dao\obj\Debug\Dao.csproj.CopyComplete
 C:\Users\Windows 10 Pro\source\repos\TP1_ Rehecho\TFinal_L3_Maquetado\TrabajoFinal\Trabajo_15_9_21\Dao\obj\Debug\Dao.dll
 C:\Users\Windows 10 Pro\source\repos\TP1_ Rehecho\TFinal_L3_Maquetado\TrabajoFinal\Trabajo_15_9_21\Dao\obj\Debug\Dao.pdb
+D:\Program_Files\Ghost\TFinal_L3_Maquetado\TrabajoFinal\Trabajo_15_9_21\Dao\bin\Debug\Dao.dll
+D:\Program_Files\Ghost\TFinal_L3_Maquetado\TrabajoFinal\Trabajo_15_9_21\Dao\bin\Debug\Dao.pdb
+D:\Program_Files\Ghost\TFinal_L3_Maquetado\TrabajoFinal\Trabajo_15_9_21\Dao\bin\Debug\Entidades.dll
+D:\Program_Files\Ghost\TFinal_L3_Maquetado\TrabajoFinal\Trabajo_15_9_21\Dao\bin\Debug\Entidades.pdb
+D:\Program_Files\Ghost\TFinal_L3_Maquetado\TrabajoFinal\Trabajo_15_9_21\Dao\obj\Debug\Dao.csproj.AssemblyReference.cache
+D:\Program_Files\Ghost\TFinal_L3_Maquetado\TrabajoFinal\Trabajo_15_9_21\Dao\obj\Debug\Dao.csproj.CoreCompileInputs.cache
+D:\Program_Files\Ghost\TFinal_L3_Maquetado\TrabajoFinal\Trabajo_15_9_21\Dao\obj\Debug\Dao.csproj.CopyComplete
+D:\Program_Files\Ghost\TFinal_L3_Maquetado\TrabajoFinal\Trabajo_15_9_21\Dao\obj\Debug\Dao.dll
+D:\Program_Files\Ghost\TFinal_L3_Maquetado\TrabajoFinal\Trabajo_15_9_21\Dao\obj\Debug\Dao.pdb
