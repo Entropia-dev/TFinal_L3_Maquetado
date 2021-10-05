@@ -24,6 +24,7 @@ namespace Negocio
             pro.set_codigo_producto(codigo_producto);
             pro.set_nombre_producto(nombre_producto);
             pro.set_precio_producto(precio_producto);
+            pro.set_stock_producto(stock);
             pro.set_estado(estado);
 
 

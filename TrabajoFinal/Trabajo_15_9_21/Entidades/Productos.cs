@@ -14,15 +14,25 @@ namespace Entidades
         decimal precio_producto; //complteado
         bool estado;    //completado
         string url_imagen;  //completado
+        int stock; 
 
         public Productos()
         {
 
         }
 
-        public void set_codigo_producto(string nuevo_codigo_producto)
+        public void set_stock_producto(int stock)
         {
-            this.codigo_producto = nuevo_codigo_producto;
+            this.stock = stock; 
+        }
+        public int get_stock_producto()
+        {
+            return this.stock; 
+        }
+
+        public void set_codigo_producto(string codigo_producto)
+        {
+            this.codigo_producto = codigo_producto;
         }
 
         public string get_codigo_producto()
@@ -30,9 +40,9 @@ namespace Entidades
             return this.codigo_producto;
         }
 
-        public void set_nombre_producto(string nuevo_nombre_producto)
+        public void set_nombre_producto(string nombre_producto)
         {
-            this.nombre_producto = nuevo_nombre_producto;
+            this.nombre_producto = nombre_producto;
         }
 
         public string get_nombre_producto()
@@ -40,9 +50,9 @@ namespace Entidades
             return this.nombre_producto;
         }
 
-        public void set_precio_producto(decimal nuevo_precio)
+        public void set_precio_producto(decimal precio)
         {
-            this.precio_producto = nuevo_precio;
+            this.precio_producto = precio;
         }
 
         public Decimal get_precio_producto()
@@ -50,9 +60,9 @@ namespace Entidades
             return this.precio_producto;
         }
 
-        public void set_estado(bool nuevo_estado)
+        public void set_estado(bool estado)
         {
-            this.estado = nuevo_estado;
+            this.estado = estado;
         }
 
         public bool get_estado()
@@ -60,9 +70,9 @@ namespace Entidades
             return this.estado;
         }
 
-        public void  set_url_imagen(string nueva_url)
+        public void  set_url_imagen(string url)
         {
-            this.url_imagen = nueva_url;
+            this.url_imagen = url;
         }
 
         public string get_codigo_imagen()
