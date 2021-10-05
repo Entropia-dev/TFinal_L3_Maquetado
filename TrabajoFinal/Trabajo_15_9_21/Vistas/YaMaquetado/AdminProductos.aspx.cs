@@ -27,6 +27,19 @@ namespace Vistas.YaMaquetado
             grdProdAdmin.DataBind();
         }
 
-     
+        //cuando se hace click sobre el boton selected se ejecuta este evento
+        protected void grdProdAdmin_SelectedIndexChanging(object sender, GridViewSelectEventArgs e)
+        {
+            //se busca los datos en el item template
+
+            String s_codigoArtProducto = ((Label)grdProdAdmin.Rows[e.NewSelectedIndex].FindControl("lbl_it_CodigoArticulo")).Text;
+            String s_PuProd = ((Label)grdProdAdmin.Rows[e.NewSelectedIndex].FindControl("lbl_it_PrecioUnitario")).Text;
+            String s_Stock = ((Label)grdProdAdmin.Rows[e.NewSelectedIndex].FindControl("lbl_it_Stock")).Text;
+            String s_Categoria = ((Label)grdProdAdmin.Rows[e.NewSelectedIndex].FindControl("lbl_it_Categoria")).Text;
+            String s_Descripcion = ((Label)grdProdAdmin.Rows[e.NewSelectedIndex].FindControl("lbl_it_Descripcion")).Text;
+            String s_Url = ((Label)grdProdAdmin.Rows[e.NewSelectedIndex].FindControl("lbl_it_URL")).Text;
+
+            lblMensaje.Text = "Usted selecciono " + s_codigoArtProducto + " " + s_PuProd + " " + s_Stock + " " + s_Categoria + " " + s_Descripcion + " " + s_Url;
+        }
     }
 }
