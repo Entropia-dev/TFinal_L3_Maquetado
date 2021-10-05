@@ -15,9 +15,22 @@ namespace Entidades
         string celular;//completado
         string email;//completado
         string consulta;//completado
+        string url;//completado
+
 
         //declaro un constructor vacio.
         public Presupuestos() { }
+
+
+        public void set_url(string new_url)
+        {
+            this.url = new_url;
+        }
+
+        public string get_url()
+        {
+            return this.url;
+        }
 
         public void set_nombre(string nuevo_nombre)
         {
