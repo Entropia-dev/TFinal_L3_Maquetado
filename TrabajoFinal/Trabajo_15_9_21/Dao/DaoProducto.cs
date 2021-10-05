@@ -55,7 +55,7 @@ namespace Dao
             SqlParameter SqlParametros = new SqlParameter();
             string aux = pro.get_codigo_producto();
             SqlParametros.Value = aux;
-            SqlParametros = Comando.Parameters.Add("@Cod_Art_Pro", "aux");
+            SqlParametros = Comando.Parameters.AddWithValue("@Cod_Art_Pro", aux);
        
           
         }

@@ -58,5 +58,10 @@ namespace Vistas.YaMaquetado
 
             cargarGridVew();
         }
+
+        protected void grdProdAdmin_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
