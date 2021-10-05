@@ -56,9 +56,10 @@ namespace Dao
             Conexion.Close();
             return ds.Tables[NombreTabla];
         }
-
+        
         public int EjecutarProcedimientoAlmacenado(SqlCommand Comando, String NombreSP)
         {
+            //Tira error cuando le das a el boton eliminar.
             int FilasCambiadas ;
             SqlConnection Conexion = ObtenerConexion();
             SqlCommand cmd = new SqlCommand();
@@ -69,8 +70,8 @@ namespace Dao
             FilasCambiadas = cmd.ExecuteNonQuery();
             Conexion.Close();
             return FilasCambiadas;
-        }
-
+        }   
+         
         public Boolean existe(String consulta)
         {
             Boolean estado = false;

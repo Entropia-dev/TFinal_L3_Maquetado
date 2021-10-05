@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using Negocio;
+using Entidades;
 using Dao;
 
 
@@ -40,6 +42,21 @@ namespace Vistas.YaMaquetado
             String s_Url = ((Label)grdProdAdmin.Rows[e.NewSelectedIndex].FindControl("lbl_it_URL")).Text;
 
             lblMensaje.Text = "Usted selecciono " + s_codigoArtProducto + " " + s_PuProd + " " + s_Stock + " " + s_Categoria + " " + s_Descripcion + " " + s_Url;
+        }
+
+        //EVENTOS QUE SUCEDEN CUANDO EL USUARIO CLIKEA SOBRE EL BOTON ELIMINAR
+        protected void grdProdAdmin_RowDeleting(object sender, GridViewDeleteEventArgs e)
+        {
+            //busco el item template id_producto
+            String s_codigoArtProducto = ((Label)grdProdAdmin.Rows[e.RowIndex].FindControl("lbl_it_CodigoArticulo")).Text;
+           
+            Productos prod = new Productos();
+            prod.set_codigo_producto( s_codigoArtProducto );
+            DaoProducto admProd = new DaoProducto();
+
+            admProd.eliminarProducto(prod);
+
+            cargarGridVew();
         }
     }
 }
