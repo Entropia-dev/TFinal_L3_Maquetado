@@ -10,14 +10,23 @@ namespace Entidades
     public class Productos
     {
         string codigo_producto; //completado
-        string nombre_producto; //completado
+        string nombre_producto; //completado nota , los productos no tienen nombre sino categoria.
         decimal precio_producto; //complteado
-        bool estado;    //completado
-        string url_imagen;  //completado
+        bool estado;    //completado ¿inutilizado? no se utiliza el estado ¿no se va a poder dar baja logica?
+       
         
-        //AGREGO LA VARIABLE STOCK PREVIAMENTE INEXSITENTE.
+        //DEBERIA AGREGAR UNA MANERA DE UTILIZAR EL ESTADO PARA NO MOSTRARLO SI ESTA EN BOOL ESTADO = FALSE ???
 
+        //AGREGO LA VARIABLE STOCK PREVIAMENTE INEXSITENTE.
         int stock;
+        //AGREGO LA VARIABLE CATEGORIA PREVIAMENTE INEXISTENTE.
+        string categoria;
+        //AGREGO LA URL DE LA IMAGEN PREVIAMENTE INEXISTENTE.
+
+        string url_imagen;  //completado
+
+        //AGREGO LA DESCRIPCION DEL PRODUCTO.
+        string descripcion; //completado
 
 
         //constructor vacio.
@@ -29,7 +38,39 @@ namespace Entidades
 
 
 
-        //gets and sets.
+        //gets and sets
+
+        public void set_url_imagen(string new_image)
+        {
+            this.url_imagen = new_image);
+        }
+
+        public string get_url_imagen()
+        {
+            return this.url_imagen;
+        }
+
+        public void set_categoria(string new_categoria)
+        {
+            this.categoria = new_categoria;
+        }
+            
+        
+        public string get_descripcion()
+        {
+            return this.descripcion;
+        }
+
+        public void set_descripcion(string new_descripcion)
+        {
+            this.descripcion = new_descripcion;
+        }
+
+        public string get_categoria()
+        {
+            return this.categoria;
+        }
+        
         public void set_codigo_producto(string nuevo_codigo_producto)
         {
             this.codigo_producto = nuevo_codigo_producto;
