@@ -66,7 +66,7 @@ Cantidad char(8) NOT NULL,
     )
     
    CREATE TABLE Productos (
-   Cod_Art_Pro char(8) NOT NULL,
+   Cod_Art_Pro varchar(50) NOT NULL,
  PU_Pro DECIMAL(8,2) DEFAULT '0,00',
  Stock int  NOT NULL,
   Categoria char(8) not null,

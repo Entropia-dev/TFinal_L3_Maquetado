@@ -22,6 +22,21 @@ namespace Dao
             return pro;
         }
 
+
+        public int EjecutarProcedimientoAlmacenado(SqlCommand Comando, String NombreSP)
+        {
+            int FilasCambiadas;
+            SqlConnection Conexion = ObtenerConexion();
+            SqlCommand cmd = new SqlCommand();
+            cmd = Comando;
+            cmd.Connection = Conexion;
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.CommandText = NombreSP;
+            FilasCambiadas = cmd.ExecuteNonQuery();
+            Conexion.Close();
+            return FilasCambiadas;
+        }
+
         public Boolean existeProducto(Productos pro)
         {
             String consulta = "Select * from producto where NombreProducto='" + pro.get_codigo_producto() + "'";
@@ -35,11 +50,20 @@ namespace Dao
             return tabla;
         }
 
-        public int eliminarProducto(Productos pro)
+        public bool eliminarProducto(Productos pro)
         {
-            SqlCommand comando = new SqlCommand();
-            ArmarParametrosProductoEliminar(ref comando, pro);
-            return ds.EjecutarProcedimientoAlmacenado(comando, "spEliminarProducto");
+            SqlCommand Comando = new SqlCommand();
+            ArmarParametrosProductoEliminar(ref Comando, pro);
+            AccesoDatos ad = new AccesoDatos();
+            int filasInsertadas = ad.EjecutarProcedimientoAlmacenado(Comando, "spEliminarProducto");
+            if(filasInsertadas == 1)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
 
 
@@ -55,7 +79,7 @@ namespace Dao
         private void ArmarParametrosProductoEliminar(ref SqlCommand Comando, Productos pro)
         {
             SqlParameter SqlParametros = new SqlParameter();
-            SqlParametros = Comando.Parameters.Add("@IDPRODUCTO", SqlDbType.Int);
+            SqlParametros = Comando.Parameters.Add("@IDPRODUCTO", SqlDbType.Char);
             SqlParametros.Value = pro.get_codigo_producto();
         }
 
@@ -179,20 +203,6 @@ namespace Dao
             adp.Fill(ds, NombreTabla);
             Conexion.Close();
             return ds.Tables[NombreTabla];
-        }
-
-        public int EjecutarProcedimientoAlmacenado(SqlCommand Comando, String NombreSP)
-        {
-            int FilasCambiadas;
-            SqlConnection Conexion = ObtenerConexion();
-            SqlCommand cmd = new SqlCommand();
-            cmd = Comando;
-            cmd.Connection = Conexion;
-            cmd.CommandType = CommandType.StoredProcedure;
-            cmd.CommandText = NombreSP;
-            FilasCambiadas = cmd.ExecuteNonQuery();
-            Conexion.Close();
-            return FilasCambiadas;
         }
 
         public Boolean existe(String consulta)
