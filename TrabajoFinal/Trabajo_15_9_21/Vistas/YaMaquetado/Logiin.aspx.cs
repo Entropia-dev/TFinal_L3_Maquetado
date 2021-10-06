@@ -16,6 +16,8 @@ using Negocio;
     //3)cuando el dni esta duplicado crashea.
     //4)cuando el correo esta duplicado crashea.
 
+//hola
+
 namespace Vistas.YaMaquetado
 {
     public partial class Cuentaa : System.Web.UI.Page
