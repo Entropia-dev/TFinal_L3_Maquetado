@@ -38,7 +38,8 @@ namespace Negocio
 
         }
 
-        public bool validarCuenta(string cuenta ,string contrasenia) {
+        public bool validarCuenta(string cuenta ,string contrasenia) 
+        {
             DaoCuenta dao = new DaoCuenta();
             Cuentas Cue = new Cuentas();
             Cue.set_Alias(cuenta);
@@ -58,5 +59,6 @@ namespace Negocio
             }
 
         }
+       
     }
 }

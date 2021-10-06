@@ -260,6 +260,21 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="YaMaquetado\Imagenes1\brandi_blanco.png" />
+    <Content Include="YaMaquetado\Imagenes1\panel_3d.png" />
+    <Content Include="YaMaquetado\Imagenes1\panel_3d_1.png" />
+    <Content Include="YaMaquetado\Imagenes1\panel_3d_2.png" />
+    <Content Include="YaMaquetado\Imagenes1\panel_3d_3.png" />
+    <Content Include="YaMaquetado\Imagenes1\revestimiento_beige.png" />
+    <Content Include="YaMaquetado\Imagenes1\revestimiento_ceramica_negro.png" />
+    <Content Include="YaMaquetado\Imagenes1\revestimiento_cocina_negro.png" />
+    <Content Include="YaMaquetado\Imagenes1\revestimiento_pared_negro.png" />
+    <Content Include="YaMaquetado\Imagenes1\revestimiento_pvc.png" />
+    <Content Include="YaMaquetado\Imagenes1\simil_ladrillo.png" />
+    <Content Include="YaMaquetado\Imagenes1\simil_madera.png" />
+    <Content Include="YaMaquetado\Imagenes1\simil_piedra.png" />
+    <Content Include="YaMaquetado\Imagenes1\simil_piedra_1.png" />
+    <Content Include="venecitas_azules.png" />
     <Content Include="YaMaquetado\AdminPresupuestos.aspx" />
     <Content Include="YaMaquetado\AdminProductos.aspx" />
     <Content Include="YaMaquetado\AdminVentas.aspx" />
@@ -290,7 +305,7 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <None Include="YaMaquetado\Imagenes1\packages.config" />
     <Content Include="TrabajoIntegradorLab3.csproj" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
