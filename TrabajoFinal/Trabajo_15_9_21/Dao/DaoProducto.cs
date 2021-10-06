@@ -91,7 +91,7 @@ namespace Dao
         private void ArmarParametrosProductoAgregar(ref SqlCommand Comando, Productos pro)
         {
             SqlParameter SqlParametros = new SqlParameter();
-            SqlParametros = Comando.Parameters.Add("@IDPRODUCTO", SqlDbType.Int);
+            SqlParametros = Comando.Parameters.Add("@IDPRODUCTO", SqlDbType.VarChar);
             SqlParametros.Value = pro.get_codigo_producto();
             SqlParametros = Comando.Parameters.Add("@NOMBREPRO", SqlDbType.VarChar);
             SqlParametros.Value = pro.get_nombre_producto();

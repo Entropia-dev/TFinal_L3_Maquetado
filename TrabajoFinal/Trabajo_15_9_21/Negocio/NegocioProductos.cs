@@ -24,14 +24,14 @@ namespace Negocio
             pro.set_codigo_producto(codigo_producto);
             pro.set_nombre_producto(nombre_producto);
             pro.set_precio_producto(precio_producto);
-            pro.set_stock_producto(stock);
+         //   pro.set_stock_producto(stock);
             pro.set_estado(estado);
 
 
             DaoProducto dao = new DaoProducto();
             if (dao.existeProducto(pro) == false)
             {
-                cant_flias = dao.agregarProducto(pro);
+          //      cant_flias = dao.agregarProducto(pro);
             }
             if (cant_flias == 1)
             {
