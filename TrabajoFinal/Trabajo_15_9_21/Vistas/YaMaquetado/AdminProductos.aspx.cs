@@ -63,5 +63,60 @@ namespace Vistas.YaMaquetado
         {
 
         }
+
+        protected void grdProdAdmin_RowEditing(object sender, GridViewEditEventArgs e)
+        {
+            //funcion del boton cuando se hace click sobre el boton editar.
+            grdProdAdmin.EditIndex = e.NewEditIndex;
+            cargarGridVew();
+
+        }
+
+        protected void grdProdAdmin_RowCancelingEdit(object sender, GridViewCancelEditEventArgs e)
+        {
+            //cancelar edicion de la grilla
+            grdProdAdmin.EditIndex = -1;
+            cargarGridVew();
+        }
+
+        protected void grdProdAdmin_RowUpdating(object sender, GridViewUpdateEventArgs e)
+        {
+            //cuando se da click sobre el boton actualizar.
+            //necesito buscar los datos del edit item template.
+            //cargo en strings con el siguiente formato
+            //String + (nombre de variable) = (formato del control dibujado)nombre del control[ubicacion del control]("nombre del control").text
+
+
+           // String s_codigoArtProducto = ((Label)grdProdAdmin.Rows[e.RowIndex].FindControl("lbl_it_CodigoArticulo")).Text;
+
+            String s_codigoArtProducto = ((Label)grdProdAdmin.Rows[e.RowIndex].FindControl("lbl_eit_codart")).Text;
+            String s_PuProd = ((TextBox)grdProdAdmin.Rows[e.RowIndex].FindControl("txt_eit_Pu")).Text;
+            String s_Stock = ((TextBox)grdProdAdmin.Rows[e.RowIndex].FindControl("txt_eit_Stock")).Text;
+            String s_Categoria = ((TextBox)grdProdAdmin.Rows[e.RowIndex].FindControl("txt_eit_Categoria")).Text;
+            String s_Descripcion = ((TextBox)grdProdAdmin.Rows[e.RowIndex].FindControl("txt_eit_Descripcion")).Text;
+            String s_Url = ((TextBox)grdProdAdmin.Rows[e.RowIndex].FindControl("txt_eit_url")).Text;
+            //acá ya tengo cargada la informacion
+
+            //cargo un articulo con la informacion de la grilla.
+
+            Productos prod = new Productos();
+            prod.set_codigo_producto(s_codigoArtProducto);
+            prod.set_precio_producto(Convert.ToDecimal(s_PuProd));   
+            prod.set_stock(Convert.ToInt32(s_Stock));
+            prod.set_categoria(s_Categoria);
+            prod.set_descripcion(s_Descripcion);
+            prod.set_url_imagen(s_Url);
+
+            //tiene 6 campos que cargan un objeto
+
+            DaoProducto admpod = new DaoProducto();
+            
+            //averiguar como realizar este paso en capas.
+            //se necesita un metodo "EditarProducto.
+            admpod.actualizar_producto(prod);
+            grdProdAdmin.EditIndex = -1;
+            cargarGridVew();
+
+        }
     }
 }
