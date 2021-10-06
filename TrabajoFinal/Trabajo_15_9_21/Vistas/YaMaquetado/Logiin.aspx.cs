@@ -16,7 +16,7 @@ using Negocio;
     //3)cuando el dni esta duplicado crashea.
     //4)cuando el correo esta duplicado crashea.
 
-//hola
+//hola ESTE SOY YO(JERE)
 
 namespace Vistas.YaMaquetado
 {
