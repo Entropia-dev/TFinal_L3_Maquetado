@@ -61,8 +61,12 @@ namespace Vistas.YaMaquetado
 
         protected void grdProdAdmin_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            //?????????????????????
+          //   grdProdAdmin.PageIndex = e.NewPageIndex();
         }
+
+
+
 
         protected void grdProdAdmin_RowEditing(object sender, GridViewEditEventArgs e)
         {
@@ -117,6 +121,12 @@ namespace Vistas.YaMaquetado
             grdProdAdmin.EditIndex = -1;
             cargarGridVew();
 
+        }
+
+        protected void grdProdAdmin_PageIndexChanging(object sender, GridViewPageEventArgs e)
+        {
+            grdProdAdmin.PageIndex = e.NewPageIndex;
+            cargarGridVew();
         }
     }
 }
