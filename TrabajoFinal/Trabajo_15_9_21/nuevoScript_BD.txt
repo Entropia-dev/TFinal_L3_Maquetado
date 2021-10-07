@@ -59,6 +59,7 @@ CREATE TABLE Productos (
 		Categoria char(8) not null,
 		Descripcion varchar(30) not null,
 		url varchar(50),
+		 Estado bit not null
 
 CONSTRAINT PK_Productos PRIMARY KEY  (Cod_Art_Pro)
 
