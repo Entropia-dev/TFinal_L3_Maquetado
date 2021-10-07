@@ -29,26 +29,47 @@ namespace Dao
 
             public Boolean existeCuenta(Cuentas pro)
             {
-                String consulta = "Select * from Cuentas where Alias ='" + pro.get_Alias() + "'";
-                return ds.existe(consulta);
-            }
 
-            public DataTable getTablaCategorias()
-            {
-                // List<Producto> lista = new List<Producto>();
-                DataTable tabla = ds.ObtenerTabla("Cuentas", "Select * from Cuentas");
-                return tabla;
-            }
-        /*
-            public int eliminarCuenta(Cuentas pro)
-            {
-                SqlCommand comando = new SqlCommand();
-                ArmarParametrosProductoEliminar(ref comando, pro);
-                return ds.EjecutarProcedimientoAlmacenado(comando, "spEliminarCuentas");
-            }*
+            /* hay que averiguar como ejecutar esta consulta
+             
+                SELECT Alias, Pass_Cue  
+                FROM Cuentas  
+                WHERE (Alias = 'ghost')             AND           (Pass_Cue = '123456')  
+                        se obtiene con pro.get alias                se obtiene con pro.get pass
+             */
+            String consulta = " SELECT Alias, Pass_Cue  from Cuentas where Alias ='" + pro.get_Alias() + "' AND  Pass_Cue = '" + pro.get_contrasenia() + "' ";
+         
+            
+            //  String consulta = "Select * from Cuentas where Alias ='" + pro.get_Alias() + "'";
+            
+            
+            return ds.existe(consulta);
+           
+        
+        }
 
-            */
-                    public int agregarCuenta(Cuentas pro)
+    public Boolean existeContraseña(Cuentas pro)
+    {
+        String consulta = "Select * from Cuentas where Alias ='" + pro.get_Alias() + "'";
+        return ds.existe(consulta);
+    }
+
+    public DataTable getTablaCategorias()
+        {
+            // List<Producto> lista = new List<Producto>();
+            DataTable tabla = ds.ObtenerTabla("Cuentas", "Select * from Cuentas");
+            return tabla;
+        }
+    /*
+        public int eliminarCuenta(Cuentas pro)
+        {
+            SqlCommand comando = new SqlCommand();
+            ArmarParametrosProductoEliminar(ref comando, pro);
+            return ds.EjecutarProcedimientoAlmacenado(comando, "spEliminarCuentas");
+        }*
+
+        */
+            public int agregarCuenta(Cuentas pro)
                     {
 
                        // pro.get_email_cuenta(ds.ObtenerMaximo("SELECT max(idProducto) FROM Producto") + 1);
