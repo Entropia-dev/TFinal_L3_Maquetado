@@ -51,10 +51,15 @@ namespace Dao
 
         public Boolean existeNivel(Cuentas pro)
         {
+            //cambiar el campo de nivel de la base de datos a bool.
+           
             string consulta = "";
             consulta = " SELECT Nivel_cuenta  from Cuentas where Alias ='" + pro.get_Alias() + "'";
-
-            return ds.existe(consulta);
+            if (consulta == null) {
+                return false;
+            }
+            else { return true; }
+           
         }
 
 
