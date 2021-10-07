@@ -31,15 +31,22 @@ namespace Vistas.YaMaquetado
         protected void btnIngresar_Click(object sender, EventArgs e)
         {
             Boolean estado = false;
+            NegocioCuenta neg_cue = new NegocioCuenta();
             estado = neg.validarCuenta(txtAlias.Text, txtContrasenia.Text);
-
-            //valida solamente la id ?
-            //fixeado el login.
-
             if (estado == true)
             {
+                //una vez validada la existencia de la cuenta hay que validar que nivel tiene la cuenta.
+                //para saber si redireccionar a el apartado de administrado o al apartado de usuario.
                 Session["Alias"] = txtAlias.Text;
-                Response.Redirect("index.aspx");
+               
+                bool nivel = neg_cue.validarnivel(txtAlias.Text, txtContrasenia.Text);
+                if (nivel == true)
+                {
+                    Response.Redirect("AdminProductos.aspx");
+                }
+                if (nivel == false) {
+                    Response.Redirect("Index.aspx");
+                }
             }
             else
             {

@@ -38,7 +38,7 @@ namespace Negocio
 
         }
 
-        public bool validarCuenta(string cuenta ,string contrasenia) 
+        public bool validarCuenta(string cuenta, string contrasenia)
         {
             DaoCuenta dao = new DaoCuenta();
             Cuentas Cue = new Cuentas();
@@ -53,12 +53,30 @@ namespace Negocio
             {
 
                 return false;
-           }
-            else {
+            }
+            else
+            {
                 return true;
             }
 
         }
-       
+
+
+        public bool validarnivel(string cuenta, string contrasenia)
+        {
+
+            DaoCuenta dao = new DaoCuenta();
+            Cuentas Cue = new Cuentas();
+            Cue.set_Alias(cuenta);
+            Cue.set_contrasenia(contrasenia);
+            if (dao.existeNivel(Cue) == false)
+            {
+
+                return false;
+            }
+            else return true;
+
+
+        }
     }
 }

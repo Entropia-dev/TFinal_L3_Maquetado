@@ -15,13 +15,22 @@ namespace Entidades
         string contrasenia;//completado
         string Dni;//completado
         string  Alias;//completado
+        int nivel;
         //declaro un constructor vacio.
 
         public Cuentas() { }
 
         // declaro los sets y los gets.
 
+        public void set_nivel(int new_nivel)
+        {
+            this.nivel = new_nivel;
+        }
 
+        public int get_nivel()
+        {
+            return this.nivel;
+        }
         public String get_Alias()
         {
             return Alias;
