@@ -34,6 +34,7 @@ namespace Vistas.YaMaquetado
             estado = neg.validarCuenta(txtAlias.Text, txtContrasenia.Text);
 
             //valida solamente la id ?
+            //fixeado el login.
 
             if (estado == true)
             {

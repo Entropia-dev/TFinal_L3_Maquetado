@@ -37,10 +37,16 @@ namespace Dao
                 WHERE (Alias = 'ghost')             AND           (Pass_Cue = '123456')  
                         se obtiene con pro.get alias                se obtiene con pro.get pass
              */
-
-            String consulta = "Select * from Cuentas where Alias ='" + pro.get_Alias() + "'";
+            String consulta = " SELECT Alias, Pass_Cue  from Cuentas where Alias ='" + pro.get_Alias() + "' AND  Pass_Cue = '" + pro.get_contrasenia() + "' ";
+         
+            
+            //  String consulta = "Select * from Cuentas where Alias ='" + pro.get_Alias() + "'";
+            
+            
             return ds.existe(consulta);
-            }
+           
+        
+        }
 
     public Boolean existeContraseña(Cuentas pro)
     {
