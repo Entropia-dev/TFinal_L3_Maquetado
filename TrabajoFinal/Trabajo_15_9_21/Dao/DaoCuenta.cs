@@ -55,10 +55,12 @@ namespace Dao
            
             string consulta = "";
             consulta = " SELECT Nivel_cuenta  from Cuentas where Alias ='" + pro.get_Alias() + "'";
-            if (consulta == null) {
-                return false;
+           
+      
+            if (consulta != "0") {
+                return true;
             }
-            else { return true; }
+            else { return false; }
            
         }
 
