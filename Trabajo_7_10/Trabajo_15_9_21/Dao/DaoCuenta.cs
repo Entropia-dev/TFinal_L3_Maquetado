@@ -53,8 +53,7 @@ namespace Dao
         {
             //cambiar el campo de nivel de la base de datos a bool.
            
-            string consulta = "";
-            consulta = " SELECT Nivel_cuenta  from Cuentas where Alias ='" + pro.get_Alias() + "'";
+            string consulta = " SELECT Nivel_cuenta  from Cuentas where Alias ='" + pro.get_Alias() + "'";
            
       
             if (consulta != "0") {

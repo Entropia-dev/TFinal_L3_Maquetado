@@ -58,7 +58,7 @@ namespace Negocio
             {
                 return true;
             }
-
+            return dao.existeCuenta(Cue);
         }
 
 

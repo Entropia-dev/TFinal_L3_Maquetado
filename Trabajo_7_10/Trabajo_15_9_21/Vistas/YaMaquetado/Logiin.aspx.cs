@@ -31,7 +31,7 @@ namespace Vistas.YaMaquetado
         protected void btnIngresar_Click(object sender, EventArgs e)
         {
             Boolean estado = false;
-            NegocioCuenta neg_cue = new NegocioCuenta();
+            //NegocioCuenta neg_cue = new NegocioCuenta();
             estado = neg.validarCuenta(txtAlias.Text, txtContrasenia.Text);
             if (estado == true)
             {
@@ -39,10 +39,10 @@ namespace Vistas.YaMaquetado
                 //para saber si redireccionar a el apartado de administrado o al apartado de usuario.
                 Session["Alias"] = txtAlias.Text;
                
-                bool nivel = neg_cue.validarnivel(txtAlias.Text, txtContrasenia.Text);
+                bool nivel = neg.validarnivel(txtAlias.Text, txtContrasenia.Text);
                 if (nivel == true)
                 {
-                    Response.Redirect("AdminProductos.aspx");
+                    Response.Redirect("admin_Productos.aspx");
                 }
                 if (nivel == false) {
                     Response.Redirect("Index.aspx");
