@@ -1,0 +1,30 @@
+D:\TPFINALENGITHUB\Tp_Final_Lab_3\TrabajoFinalLab3\TrabajoFinal\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache
+D:\TPFINALENGITHUB\Tp_Final_Lab_3\TrabajoFinalLab3\TrabajoFinal\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+D:\TPFINALENGITHUB\Tp_Final_Lab_3\TrabajoFinalLab3\TrabajoFinal\Entidades\bin\Debug\Entidades.dll
+D:\TPFINALENGITHUB\Tp_Final_Lab_3\TrabajoFinalLab3\TrabajoFinal\Entidades\bin\Debug\Entidades.pdb
+D:\TPFINALENGITHUB\Tp_Final_Lab_3\TrabajoFinalLab3\TrabajoFinal\Entidades\obj\Debug\Entidades.dll
+D:\TPFINALENGITHUB\Tp_Final_Lab_3\TrabajoFinalLab3\TrabajoFinal\Entidades\obj\Debug\Entidades.pdb
+C:\Users\Aaron\Desktop\TrabajoFinalLab3\TrabajoFinal\Entidades\bin\Debug\Entidades.dll
+C:\Users\Aaron\Desktop\TrabajoFinalLab3\TrabajoFinal\Entidades\bin\Debug\Entidades.pdb
+C:\Users\Aaron\Desktop\TrabajoFinalLab3\TrabajoFinal\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache
+C:\Users\Aaron\Desktop\TrabajoFinalLab3\TrabajoFinal\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\Aaron\Desktop\TrabajoFinalLab3\TrabajoFinal\Entidades\obj\Debug\Entidades.dll
+C:\Users\Aaron\Desktop\TrabajoFinalLab3\TrabajoFinal\Entidades\obj\Debug\Entidades.pdb
+C:\Users\RyoGaGotoku\Downloads\Telegram Desktop\TrabajoFinal\Entidades\bin\Debug\Entidades.dll
+C:\Users\RyoGaGotoku\Downloads\Telegram Desktop\TrabajoFinal\Entidades\bin\Debug\Entidades.pdb
+C:\Users\RyoGaGotoku\Downloads\Telegram Desktop\TrabajoFinal\Entidades\obj\Debug\Entidades.csproj.AssemblyReference.cache
+C:\Users\RyoGaGotoku\Downloads\Telegram Desktop\TrabajoFinal\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\RyoGaGotoku\Downloads\Telegram Desktop\TrabajoFinal\Entidades\obj\Debug\Entidades.dll
+C:\Users\RyoGaGotoku\Downloads\Telegram Desktop\TrabajoFinal\Entidades\obj\Debug\Entidades.pdb
+C:\Users\Windows 10 Pro\source\repos\TP1_ Rehecho\TFinal_L3_Maquetado\TrabajoFinal\Trabajo_15_9_21\Entidades\bin\Debug\Entidades.dll
+C:\Users\Windows 10 Pro\source\repos\TP1_ Rehecho\TFinal_L3_Maquetado\TrabajoFinal\Trabajo_15_9_21\Entidades\bin\Debug\Entidades.pdb
+C:\Users\Windows 10 Pro\source\repos\TP1_ Rehecho\TFinal_L3_Maquetado\TrabajoFinal\Trabajo_15_9_21\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache
+C:\Users\Windows 10 Pro\source\repos\TP1_ Rehecho\TFinal_L3_Maquetado\TrabajoFinal\Trabajo_15_9_21\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\Windows 10 Pro\source\repos\TP1_ Rehecho\TFinal_L3_Maquetado\TrabajoFinal\Trabajo_15_9_21\Entidades\obj\Debug\Entidades.dll
+C:\Users\Windows 10 Pro\source\repos\TP1_ Rehecho\TFinal_L3_Maquetado\TrabajoFinal\Trabajo_15_9_21\Entidades\obj\Debug\Entidades.pdb
+D:\Program_Files\Ghost\TFinal_L3_Maquetado\TrabajoFinal\Trabajo_15_9_21\Entidades\bin\Debug\Entidades.dll
+D:\Program_Files\Ghost\TFinal_L3_Maquetado\TrabajoFinal\Trabajo_15_9_21\Entidades\bin\Debug\Entidades.pdb
+D:\Program_Files\Ghost\TFinal_L3_Maquetado\TrabajoFinal\Trabajo_15_9_21\Entidades\obj\Debug\Entidades.csproj.AssemblyReference.cache
+D:\Program_Files\Ghost\TFinal_L3_Maquetado\TrabajoFinal\Trabajo_15_9_21\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+D:\Program_Files\Ghost\TFinal_L3_Maquetado\TrabajoFinal\Trabajo_15_9_21\Entidades\obj\Debug\Entidades.dll
+D:\Program_Files\Ghost\TFinal_L3_Maquetado\TrabajoFinal\Trabajo_15_9_21\Entidades\obj\Debug\Entidades.pdb
