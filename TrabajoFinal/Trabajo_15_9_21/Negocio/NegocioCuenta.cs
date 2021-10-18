@@ -65,18 +65,12 @@ namespace Negocio
         public bool validarnivel(string cuenta, string contrasenia)
         {
 
-            DaoCuenta dao = new DaoCuenta();
-            Cuentas Cue = new Cuentas();
-            Cue.set_Alias(cuenta);
-            Cue.set_contrasenia(contrasenia);
-            if (dao.existeNivel(Cue) == false)
-            {
-
-                return false;
-            }
-            else return true;
-
-
+            //la funcion validar nivel revisa que la cuenta tenga como usuario "admin" ademas de 
+            //una contraseña y alias correcto.
+            int flag = 0;
+            bool cuenta_valida = validarCuenta(cuenta, contrasenia);
+            if (cuenta_valida == true) { flag++; }
+            if (flag == 1 && cuenta == "admin") { return true; } else return false;
         }
     }
 }
