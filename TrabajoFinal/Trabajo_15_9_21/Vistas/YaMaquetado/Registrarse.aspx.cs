@@ -21,9 +21,13 @@ namespace Vistas.YaMaquetado
 
         protected void btnRegistrar_Click(object sender, EventArgs e)
         {
+            //hay que validar que el correo electronico no este en uso por que sino crashea.
+
+
             int flag = 0;
             //se usa una bandera para validar que el alias ingresado sea distinto de admin
-            if(txtAlias.Text == "admin")
+            if(txtAlias.Text == "admin" || txtAlias.Text =="ADMIN" || txtAlias.Text == "ADMINISTRADOR " ||
+                txtAlias.Text == "Administrador")
             {
                 flag++;
             }
@@ -44,11 +48,12 @@ namespace Vistas.YaMaquetado
             else
             {
                 if (flag == 1) { lblMensaje.Text = "el uso del alias admin se encuentra restringido , no se ha registrado con exito."; }
+
                 else
                 {
-
                     lblMensaje.Text = "No se ha registrado con exito.";
                 }
+                
             }
         }
     }

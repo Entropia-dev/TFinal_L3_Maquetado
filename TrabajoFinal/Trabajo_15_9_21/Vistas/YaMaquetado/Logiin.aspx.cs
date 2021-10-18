@@ -35,8 +35,9 @@ namespace Vistas.YaMaquetado
             estado = neg.validarCuenta(txtAlias.Text, txtContrasenia.Text);
             if (estado == true)
             {
-                //una vez validada la existencia de la cuenta hay que validar que nivel tiene la cuenta.
-                //para saber si redireccionar a el apartado de administrado o al apartado de usuario.
+                        //una vez validada la existencia de la cuenta hay que validar que nivel tiene la cuenta.
+                        //para saber si redireccionar a el apartado de administrado o al apartado de usuario.
+                        //ya se redirecciona al lugar correcto.
                 Session["Alias"] = txtAlias.Text;
                
                 bool nivel = neg_cue.validarnivel(txtAlias.Text, txtContrasenia.Text);
