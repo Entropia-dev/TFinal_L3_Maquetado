@@ -38,7 +38,7 @@ namespace Negocio
 
         }
 
-        public bool validarCuenta(string cuenta ,string contrasenia) 
+        public bool validarCuenta(string cuenta, string contrasenia)
         {
             DaoCuenta dao = new DaoCuenta();
             Cuentas Cue = new Cuentas();
@@ -53,12 +53,24 @@ namespace Negocio
             {
 
                 return false;
-           }
-            else {
+            }
+            else
+            {
                 return true;
             }
 
         }
-       
+
+
+        public bool validarnivel(string cuenta, string contrasenia)
+        {
+
+            //la funcion validar nivel revisa que la cuenta tenga como usuario "admin" ademas de 
+            //una contraseña y alias correcto.
+            int flag = 0;
+            bool cuenta_valida = validarCuenta(cuenta, contrasenia);
+            if (cuenta_valida == true) { flag++; }
+            if (flag == 1 && cuenta == "admin") { return true; } else return false;
+        }
     }
 }

@@ -37,7 +37,8 @@ namespace Dao
                 WHERE (Alias = 'ghost')             AND           (Pass_Cue = '123456')  
                         se obtiene con pro.get alias                se obtiene con pro.get pass
              */
-            String consulta = " SELECT Alias, Pass_Cue  from Cuentas where Alias ='" + pro.get_Alias() + "' AND  Pass_Cue = '" + pro.get_contrasenia() + "' ";
+            String consulta = " SELECT Alias, Pass_Cue  from Cuentas where Alias ='" +
+                pro.get_Alias() + "' AND  Pass_Cue = '" + pro.get_contrasenia() + "' ";
          
             
             //  String consulta = "Select * from Cuentas where Alias ='" + pro.get_Alias() + "'";
@@ -46,9 +47,28 @@ namespace Dao
             return ds.existe(consulta);
            
         
+              }
+
+        public Boolean existeNivel(Cuentas pro)
+        {
+            //cambiar el campo de nivel de la base de datos a bool.
+           
+            string consulta = "";
+            consulta = " SELECT Nivel_cuenta  from Cuentas where Alias ='" + pro.get_Alias() + "'";
+
+
+            if (consulta == "NULL")
+            {
+                return false;
+            }
+            else return true;
+            
+           
         }
 
-    public Boolean existeContraseña(Cuentas pro)
+
+
+        public Boolean existeContraseña(Cuentas pro)
     {
         String consulta = "Select * from Cuentas where Alias ='" + pro.get_Alias() + "'";
         return ds.existe(consulta);
