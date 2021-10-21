@@ -10,6 +10,7 @@ using System.Data.SqlClient;
 
 namespace Dao
 {
+    // hola que tal ?
     public class DaoCuenta
     {
 
