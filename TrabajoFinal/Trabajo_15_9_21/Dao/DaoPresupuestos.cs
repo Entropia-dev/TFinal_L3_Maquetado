@@ -11,6 +11,7 @@ namespace Dao
 {
     class DaoPresupuestos
     {
+        AccesoDatos ds = new AccesoDatos();
 
         private void ArmarParametrosPrepuestoAgregar(ref SqlCommand Comando,Presupuestos pre)
         {
@@ -38,7 +39,7 @@ namespace Dao
             // pro.get_email_cuenta(ds.ObtenerMaximo("SELECT max(idProducto) FROM Producto") + 1);
             SqlCommand comando = new SqlCommand();
             ArmarParametrosPrepuestoAgregar(ref comando, pre);
-            return ds.EjecutarProcedimientoAlmacenado(comando, "spinsertarcuenta");
+            return ds.EjecutarProcedimientoAlmacenado(comando, "spinsertarpresupuesto");
         }
 
     }
