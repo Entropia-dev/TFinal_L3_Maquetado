@@ -16,11 +16,33 @@ namespace Entidades
         string email;//completado
         string consulta;//completado
         string url;//completado
+        string localidad;
+        int ID;
 
 
         //declaro un constructor vacio.
         public Presupuestos() { }
 
+        public void set_ID(int id)
+        {
+            this.ID = id;
+        }
+
+        public int get_ID()
+        {
+            return this.ID;
+        }
+
+
+        public void set_localidad (string localidad)
+        {
+            this.localidad = localidad;
+        }
+
+        public string get_localidad()
+        {
+            return this.localidad;
+        }
 
         public void set_url(string new_url)
         {
