@@ -64,3 +64,14 @@ D:\Program_Files\Ghost\TFinal_L3_Maquetado\TrabajoFinal\Trabajo_15_9_21\Negocio\
 D:\Program_Files\Ghost\TFinal_L3_Maquetado\TrabajoFinal\Trabajo_15_9_21\Negocio\obj\Debug\Negocio.csproj.CopyComplete
 D:\Program_Files\Ghost\TFinal_L3_Maquetado\TrabajoFinal\Trabajo_15_9_21\Negocio\obj\Debug\Negocio.dll
 D:\Program_Files\Ghost\TFinal_L3_Maquetado\TrabajoFinal\Trabajo_15_9_21\Negocio\obj\Debug\Negocio.pdb
+C:\Users\Usuario1\Documents\GitHub\TFinal_L3_Maquetado\TrabajoFinal\Trabajo_15_9_21\Negocio\bin\Debug\Negocio.dll
+C:\Users\Usuario1\Documents\GitHub\TFinal_L3_Maquetado\TrabajoFinal\Trabajo_15_9_21\Negocio\bin\Debug\Negocio.pdb
+C:\Users\Usuario1\Documents\GitHub\TFinal_L3_Maquetado\TrabajoFinal\Trabajo_15_9_21\Negocio\bin\Debug\Dao.dll
+C:\Users\Usuario1\Documents\GitHub\TFinal_L3_Maquetado\TrabajoFinal\Trabajo_15_9_21\Negocio\bin\Debug\Entidades.dll
+C:\Users\Usuario1\Documents\GitHub\TFinal_L3_Maquetado\TrabajoFinal\Trabajo_15_9_21\Negocio\bin\Debug\Dao.pdb
+C:\Users\Usuario1\Documents\GitHub\TFinal_L3_Maquetado\TrabajoFinal\Trabajo_15_9_21\Negocio\bin\Debug\Entidades.pdb
+C:\Users\Usuario1\Documents\GitHub\TFinal_L3_Maquetado\TrabajoFinal\Trabajo_15_9_21\Negocio\obj\Debug\Negocio.csprojAssemblyReference.cache
+C:\Users\Usuario1\Documents\GitHub\TFinal_L3_Maquetado\TrabajoFinal\Trabajo_15_9_21\Negocio\obj\Debug\Negocio.csproj.CoreCompileInputs.cache
+C:\Users\Usuario1\Documents\GitHub\TFinal_L3_Maquetado\TrabajoFinal\Trabajo_15_9_21\Negocio\obj\Debug\Negocio.csproj.CopyComplete
+C:\Users\Usuario1\Documents\GitHub\TFinal_L3_Maquetado\TrabajoFinal\Trabajo_15_9_21\Negocio\obj\Debug\Negocio.dll
+C:\Users\Usuario1\Documents\GitHub\TFinal_L3_Maquetado\TrabajoFinal\Trabajo_15_9_21\Negocio\obj\Debug\Negocio.pdb
