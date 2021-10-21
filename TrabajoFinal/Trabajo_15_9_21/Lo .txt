@@ -1,0 +1,10 @@
+EN el area de login se tiene que tomar el nombre en la variable sesion para poder reemplazar el invitado como visitante. 
+
+
+Lograr que el alias y pass queden guardados (cookies)
+
+crear un form que contenga un grid o list view para admin_presupuestos / admin_productos / admin_ventas / admin_clientes
+
+Dejar funcional presupuestos.aspx 
+
+Actualizar la tabla presupuesto para que el campo ID se autoIncremente 
