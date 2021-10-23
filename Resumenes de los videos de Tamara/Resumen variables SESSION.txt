@@ -1,6 +1,12 @@
 Apunte de Programacion 3 
 
+https://www.youtube.com/watch?v=rSDhOhqtiV0&t=471s
+
  * Para que sirven las variables de tipo SESION ?
+
+Variables de sesión
+Estas variables duran lo que el usuario se mantiene en el navegador, si cierra el 
+navegador la variable desaparece.
 
 Creo un proyecto 
 abro dos form web c# (app1A , app1B)
