@@ -1,9 +1,1 @@
-https://youtu.be/rSDhOhqtiV0?t=792
-
-Nuevamente con 2 formularios: app1, app2
-
-Usamos Hyperlink para viajar de una pagina a otra. Para ello modificamos el texto en propiedades "ir a app2" y en el Navigate Url lo enlazamos a otro form o pagina. 
-
-Para el siguente ejemplo voy arrojar un button junto al Hyperlink que diga "Contar". La idea es que cada vez que haga click en el boton "Contar" pueda guardar los click que realice, contabilizarlos y enviarlos a app2.
-
-En app2 tambien arrojo un Hyperlink para volver a app1, luego debajo escribo "cantidad de clicks realizados con el boton contar" y un LABEL  que muestre este conteo. 
+todavia no llegue aca
