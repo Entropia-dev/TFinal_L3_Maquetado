@@ -99,6 +99,8 @@ namespace Vistas.YaMaquetado
             String s_Categoria = ((TextBox)grdProdAdmin.Rows[e.RowIndex].FindControl("txt_eit_Categoria")).Text;
             String s_Descripcion = ((TextBox)grdProdAdmin.Rows[e.RowIndex].FindControl("txt_eit_Descripcion")).Text;
             String s_Url = ((TextBox)grdProdAdmin.Rows[e.RowIndex].FindControl("txt_eit_url")).Text;
+            String s_Estado = ((TextBox)grdProdAdmin.Rows[e.RowIndex].FindControl("txt_eit_Estado")).Text;
+            
             //acá ya tengo cargada la informacion
 
             //cargo un articulo con la informacion de la grilla.
@@ -110,6 +112,7 @@ namespace Vistas.YaMaquetado
             prod.set_categoria(s_Categoria);
             prod.set_descripcion(s_Descripcion);
             prod.set_url_imagen(s_Url);
+         
 
             //tiene 6 campos que cargan un objeto
 
