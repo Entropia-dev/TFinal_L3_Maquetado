@@ -27,14 +27,13 @@
                 
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Lista de presupuestos</a>
+                <a class="nav-link" href="#">Administracion&nbsp; de presupuestos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Lista de productos</a>
+                <a class="nav-link" href="#">Administracion de productos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Lista de ventas</a>
-              </li>
+                <a class="nav-link" href="#">Administracion de ventas</a>
               <li class="nav-item">
                 <a class="nav-link" href="#">Configuraciones</a>
               </li>
