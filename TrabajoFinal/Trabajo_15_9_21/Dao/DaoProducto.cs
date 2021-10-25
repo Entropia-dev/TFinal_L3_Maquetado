@@ -130,6 +130,9 @@ namespace Dao
             SqlParametrosProducto = Comando.Parameters.Add("@Url", SqlDbType.NVarChar, 50);
             SqlParametrosProducto.Value = prod.get_url_imagen();
 
+            //actualiza el estado 
+            SqlParametrosProducto = Comando.Parameters.Add("@Estado", SqlDbType.Bit);
+            SqlParametrosProducto.Value = prod.get_estado();
         }
 
 
