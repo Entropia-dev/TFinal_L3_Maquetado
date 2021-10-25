@@ -1,6 +1,12 @@
 Apunte de Programacion 3 
 
+https://www.youtube.com/watch?v=rSDhOhqtiV0&t=471s
+
  * Para que sirven las variables de tipo SESION ?
+
+Variables de sesión
+Estas variables duran lo que el usuario se mantiene en el navegador, si cierra el 
+navegador la variable desaparece.
 
 Creo un proyecto 
 abro dos form web c# (app1A , app1B)
@@ -25,4 +31,33 @@ protected void btnEnviar_Click(object sender, EventArgs e)
 {
 //crear una variable de tipo session 
 Session["nombreUsuario"] = txtNombre.text;
+Reponse.Redirect("App1B.aspx");
 }
+
+Una vez hecho click en el boton enviar nos va a redirigir al otro form.
+
+para esto:
+
+Reponse.Redirect("App1B.aspx");
+
+Ya cuando se cargue el App1B.aspx para recibir esta informacion vamos a escribir dentro del Page_Load:
+
+if(Session ["nombreUsuario"]!= null)
+{
+// hay informacion en la variable session
+}
+
+una vez que entramos dentro de este if podemos validar que hay valores dentro de la variable session. Ahora la informacion la volcamos sobre el label :
+
+if(Session ["nombreUsuario"]!= null)
+{
+// hay informacion en la variable session
+
+lblMensaje.Text = Session["nombreUsuario"].ToString();
+
+}
+
+De este modo podemos tener nuestra informacion entre los formulario atraves de la variable session, esta se mantendra mientras nuestro usuario este navegando por nuestro sitio web, SOLO EN EL MISMO NAVEGADOR.
+
+
+

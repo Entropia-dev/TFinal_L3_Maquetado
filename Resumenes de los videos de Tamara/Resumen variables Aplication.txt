@@ -1,0 +1,48 @@
+https://youtu.be/rSDhOhqtiV0?t=792
+
+Variables de aplicación
+Estas permanecen a pesar de que el usuario cierre el navegador ya que se mantienen mientras el servidor se esté ejecutando.
+
+Nuevamente con 2 formularios: app1, app2
+
+Usamos Hyperlink para viajar de una pagina a otra. Para ello modificamos el texto en propiedades "ir a app2" y en el Navigate Url lo enlazamos a otro form o pagina. 
+
+Para el siguente ejemplo voy arrojar un button junto al Hyperlink que diga "Contar". La idea es que cada vez que haga click en el boton "Contar" pueda guardar los click que realice, contabilizarlos y enviarlos a app2.
+
+En app2 tambien arrojo un Hyperlink para volver a app1, luego debajo escribo "cantidad de clicks realizados con el boton contar" y un LABEL  que muestre este conteo. 
+
+Voy a ir al evento del boton "Contar" y creo una variable de tipo Aplication y preguntamos dentro del: 
+
+ protected void btnContar_Click(object sender, EventArgs e)
+{
+if (Application["cant"]== null) //1
+{
+  Aplication["cant"] = 1  //2 
+}
+else  //3
+{
+ Aplication["cant"]= Convert.ToInt32(Aplication["cant"])+1; //4
+}
+}
+
+//1. Pregunto si es nulla
+//2. Siendo asi la creo y le doy el valor 1, sera la 1ra vez que se haga click en el boton contar
+//3. Cuando la variable Aplication no sea nulla significa que ya tiene informacion.
+//4. Si existe tomo el valor de Aplication, lo convierto a entero, le sumo uno y lo guardo en la Aplication["cant"].
+
+Ahora tengo ir a App2 y mostrar lo que tiene la variable Aplication["cant"]. 
+Para ello voy a ir al codigo del Page_Load y escribir lo siguente:
+
+protected void Page_Load(object sender, EventArgs e)
+{
+if(Aplication["cant"]!= null)  //1. 
+{
+ lblMensaje.Text = Aplication["cant"].ToString();  //2.
+}
+}
+
+//1. Pregunto si la variable no esta vacia 
+//2. Siendo asi convierto a String el entero que estoy recibiendo y lo guardo en el LABEL para mostrarlo por pantalla.
+
+
+NOTA: APLICATION NOS SERVIRIA PARA HACER LA VARIABLE CARRITO O SIMILAR

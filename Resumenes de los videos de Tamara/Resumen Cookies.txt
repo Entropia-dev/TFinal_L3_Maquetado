@@ -1,0 +1,57 @@
+
+
+En app1 voy a agregar personas 
+
+*creo 2 formulario 
+*estando en app1 agrego un Hyperlink que diga "Ir a app2"
+*agregamos una tabla hmtl para mejorar el posicionamiento de los  elementos
+* Agregamos dos textbox. Pedimos nombre y apellido, y colocamos un boton "Agregar". 
+*despues en app2, agrego un gridview y un boton "Eliminar el listado de personas".
+
+1. Con dataTable podemos guardar la informacion. Cada persona que agregue sera una fila de esa tabla. 
+2. Luego voy a hacer una variable SESSION para guardarla y en app2 volcar todo el contenido. 
+
+
+codificamos debajo del metodo del boton agregar de app1.
+creamos un metodo:
+
+public DataTable crearTabla() //1.
+{
+
+ DataTable dt = new DataTable() //2.
+ DataColumn columna = new DataColum("NombreColumna",System.Type.GetType("System.String"));  //3.
+ dt.Columns.Add(columna);
+
+ columna = new DataColumn("ApellidoColumna",System.Type.GetType("System.String"));
+ dt.Columns.Add(columna);
+
+ return dt; 
+
+
+}
+
+//1. entonces si yo llamo a este metodo me devuelve una tabla. 
+//2. creo una tabla 
+//3. creo una columna, en el primer termino del parentesis va el nombre de la columna y en el segundo termino el tipo de dato de esa columna[    System.Type.GetType("System.String")     ].
+//4. le agrego la columna que cree en la linea anterior
+
+
+//5. declaro otra columna 
+//6. agrego la columna recientemente declarada.
+
+//7. una vez agregadas las columnas las retorno. 
+
+
+Luego voy a crear otro metodo debajo de este que acabo de hacer:
+
+ public void agregarFila()
+{
+
+}
+
+//1. Este metodo va a recibir la tabla a la cual quiere agregarle filas. Despues quiero recibir los dos valores que quiero agregar sobre esas columnas, y para ello voy a recibir una variable string que contenga el nombre y otra variable string que contenga el apellido. Recibo la tabla y los 2 valores que hay que agregar en esas filas.
+//2. Creo una fila con el formato DataRow que es un tipo de dato que devuelve una fila. Cuando escribo tabla.NewRow() este me devuelve el formato que voy a necesitar, osea una columna para el nombre y otra para el apellido. Entonces el DR sabe que tiene que llenar 2 columnas.
+//3. Agrega sobre nombre  
+//4. Agrega sobre apellido
+//5. Sobre la tabla le agrego el nuevo DR. 
+

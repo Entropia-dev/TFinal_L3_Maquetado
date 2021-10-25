@@ -1,0 +1,12 @@
+Es importante que recordemos el tipo de datos que está asociado a 
+esa variable. Si guardamos un int, deberemos castearlo a int para tratarlo como 
+tal, lo mismo para los otros tipos de datos.
+
+Ejemplos:
+➢ Convierto a entero lo que había dentro de la variable Session, le sumo dos y lo vuelvo a guardar.
+
+Session["Cantidad"] = Convert.ToInt32(Session["Cantidad"]) + 2;
+
+➢ Guardo en una variable DataTable lo que había dentro de la sesión.
+
+DataTable dt = (DataTable)Application["Tabla"];
