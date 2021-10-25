@@ -81,6 +81,8 @@
                 </asp:GridView>
             </p>
             <p class="h3 mb-3 fw-normal text-center">
+                Importante , en caso de querer dar de baja un producto de un catalogo
+                Se debe cambiar su estado a "False" , "True" en caso de querer devolverlo al mismo.
                 <asp:Label ID="lblMensaje" runat="server"></asp:Label>
             </p>
         </div>
