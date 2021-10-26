@@ -58,3 +58,8 @@ Luego voy a crear otro metodo debajo de este que acabo de hacer:
 //4. Agrega sobre apellido
 //5. Sobre la tabla le agrego el nuevo DR. 
 
+CONFIGURAR EL BOTON CLICK
+
+Para ello doble click en el boton. 
+Pregunto si la variable session ["tabla"] es igual a NULL significa que no esta creada y como no esta creada voy arrojar sobre la variable session el metodo crear tabla. Entonces si es null guardo una tabla sobre la variable SESSION. Recordemos que el metodo CREAR_TABLA nos devolvia una tabla con sus respectivas columnas.
+  	
