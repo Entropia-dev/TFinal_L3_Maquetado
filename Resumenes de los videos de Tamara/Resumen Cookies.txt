@@ -44,12 +44,15 @@ public DataTable crearTabla() //1.
 
 Luego voy a crear otro metodo debajo de este que acabo de hacer:
 
- public void agregarFila()
+ public void agregarFila(DataTable tabla, String nombre, String apellido)
 {
-
+ DataRow dr = tabla.NewRow();
+ dr["Nombre"] = nombre;
+ dr["Apellido"] = apellido;
+ tabla.Rows.Add(dr);
 }
 
-//1. Este metodo va a recibir la tabla a la cual quiere agregarle filas. Despues quiero recibir los dos valores que quiero agregar sobre esas columnas, y para ello voy a recibir una variable string que contenga el nombre y otra variable string que contenga el apellido. Recibo la tabla y los 2 valores que hay que agregar en esas filas.
+//1. Este metodo va a recibir la tabla a la cual quiere agregarle filas. Luego recibo los dos valores que quiero agregar sobre esas columnas, y para ello voy a recibir una variable string que contenga el nombre y otra variable string que contenga el apellido. Recibo la tabla y los 2 valores que hay que agregar en esas filas.
 //2. Creo una fila con el formato DataRow que es un tipo de dato que devuelve una fila. Cuando escribo tabla.NewRow() este me devuelve el formato que voy a necesitar, osea una columna para el nombre y otra para el apellido. Entonces el DR sabe que tiene que llenar 2 columnas.
 //3. Agrega sobre nombre  
 //4. Agrega sobre apellido
