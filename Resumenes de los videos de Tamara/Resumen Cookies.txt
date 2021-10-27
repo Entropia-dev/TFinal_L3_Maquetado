@@ -77,3 +77,16 @@ De esta forma garantizamos que cuando lleguemos a este punto ya la variable SESS
 
 //4. Ahora llamamos al metodo AGREGAR_FILA (Necesita recibir por parametros una tabla, que sera la que ya tenemos creada con la variable SESION la cual se debera castear con el tipo de dato DATATABLE, ademas dos string, uno para el nombre y el otro para el apellido) 
  Resumiendo, crea una tabla y luego agrega filas sobre ella.
+
+Despues en el App2, agrego en el encabezado USING SYSTEM.DATA y cuando se cargue la pagina por primera vez vamos a preguntar si la variable SESSION que se llama tabla es distinta de (ose tiene algo) le vuelco al GRIDVIEW lo que hay en esta variable SESSION["tabla"]. Es importante recordar que dentro de esta varible hay una tabla, por eso debo CASTEARLO al tipo de dato DATATABLE. 
+Por ultimo le agrego el DATABIND(); creo que era para que podamos visualizar los datos arrojados en el grid.
+
+protected void Page_Load(object sender, EventArgs e)
+{
+if(Session["tabla"]!=null)
+{
+grdPersonas.DataSource = (DataTable)Session["tabla"];
+grdPersonas.DataBind();
+}
+}
+
