@@ -60,6 +60,20 @@ Luego voy a crear otro metodo debajo de este que acabo de hacer:
 
 CONFIGURAR EL BOTON CLICK
 
-Para ello doble click en el boton. 
-Pregunto si la variable session ["tabla"] es igual a NULL significa que no esta creada y como no esta creada voy arrojar sobre la variable session el metodo crear tabla. Entonces si es null guardo una tabla sobre la variable SESSION. Recordemos que el metodo CREAR_TABLA nos devolvia una tabla con sus respectivas columnas.
-  	
+protected void btnAgregar_Click(object sender, EventArgs e) //1.
+{
+if(Session["tabla"]==null)  //2.
+{
+Session["tabla"] = crearTabla();  //3.
+}
+agregarFila((DataTable)Session["tabla"], txtNombre.Text, txtApellido.Text);  //4
+}
+
+//1. Para ello doble click en el boton. 
+//2. Pregunto si la variable session ["tabla"] es igual a NULL significa que no esta creada.
+//3. Como no esta creada voy arrojar sobre la variable session el metodo crear tabla. Entonces si es null guardo una tabla sobre la variable SESSION. Recordemos que el metodo CREAR_TABLA nos devolvia una tabla con sus respectivas columnas. 
+ 
+De esta forma garantizamos que cuando lleguemos a este punto ya la variable SESSION va a tener una tabla.
+
+//4. Ahora llamamos al metodo AGREGAR_FILA (Necesita recibir por parametros una tabla, que sera la que ya tenemos creada con la variable SESION la cual se debera castear con el tipo de dato DATATABLE, ademas dos string, uno para el nombre y el otro para el apellido) 
+ Resumiendo, crea una tabla y luego agrega filas sobre ella.
