@@ -22,10 +22,10 @@ public DataTable crearTabla() //1.
  DataColumn columna = new DataColum("NombreColumna",System.Type.GetType("System.String"));  //3.
  dt.Columns.Add(columna);
 
- columna = new DataColumn("ApellidoColumna",System.Type.GetType("System.String"));
- dt.Columns.Add(columna);
+ columna = new DataColumn("ApellidoColumna",System.Type.GetType("System.String"));  //5.
+ dt.Columns.Add(columna);  //6.
 
- return dt; 
+ return dt; //7.
 
 
 }
@@ -44,12 +44,12 @@ public DataTable crearTabla() //1.
 
 Luego voy a crear otro metodo debajo de este que acabo de hacer:
 
- public void agregarFila(DataTable tabla, String nombre, String apellido)
+ public void agregarFila(DataTable tabla, String nombre, String apellido)  //1.
 {
- DataRow dr = tabla.NewRow();
- dr["Nombre"] = nombre;
- dr["Apellido"] = apellido;
- tabla.Rows.Add(dr);
+ DataRow dr = tabla.NewRow();  //2.
+ dr["Nombre"] = nombre;        //3.
+ dr["Apellido"] = apellido;    //4.
+ tabla.Rows.Add(dr);           //5.
 }
 
 //1. Este metodo va a recibir la tabla a la cual quiere agregarle filas. Luego recibo los dos valores que quiero agregar sobre esas columnas, y para ello voy a recibir una variable string que contenga el nombre y otra variable string que contenga el apellido. Recibo la tabla y los 2 valores que hay que agregar en esas filas.
@@ -67,6 +67,9 @@ if(Session["tabla"]==null)  //2.
 Session["tabla"] = crearTabla();  //3.
 }
 agregarFila((DataTable)Session["tabla"], txtNombre.Text, txtApellido.Text);  //4
+
+txtNombre.Text = ""; //5
+txtApellido.Text = ""; //5
 }
 
 //1. Para ello doble click en el boton. 
@@ -77,16 +80,34 @@ De esta forma garantizamos que cuando lleguemos a este punto ya la variable SESS
 
 //4. Ahora llamamos al metodo AGREGAR_FILA (Necesita recibir por parametros una tabla, que sera la que ya tenemos creada con la variable SESION la cual se debera castear con el tipo de dato DATATABLE, ademas dos string, uno para el nombre y el otro para el apellido) 
  Resumiendo, crea una tabla y luego agrega filas sobre ella.
+//5. Borro lo tipeado por el usuario.
 
-Despues en el App2, agrego en el encabezado USING SYSTEM.DATA y cuando se cargue la pagina por primera vez vamos a preguntar si la variable SESSION que se llama tabla es distinta de (ose tiene algo) le vuelco al GRIDVIEW lo que hay en esta variable SESSION["tabla"]. Es importante recordar que dentro de esta varible hay una tabla, por eso debo CASTEARLO al tipo de dato DATATABLE. 
-Por ultimo le agrego el DATABIND(); creo que era para que podamos visualizar los datos arrojados en el grid.
+Despues en el App2, agrego en el encabezado USING SYSTEM.DATA
 
 protected void Page_Load(object sender, EventArgs e)
 {
-if(Session["tabla"]!=null)
+if(Session["tabla"]!=null)  //1.
 {
-grdPersonas.DataSource = (DataTable)Session["tabla"];
-grdPersonas.DataBind();
+grdPersonas.DataSource = (DataTable)Session["tabla"];  //2.
+grdPersonas.DataBind();            //3.
 }
+}
+
+ //1. Cuando se cargue la pagina por primera vez vamos a preguntar si la variable SESSION que se llama tabla es distinta de null (osea tiene algo).
+ //2. Le vuelco al GRIDVIEW lo que hay en esta variable SESSION["tabla"]. Es importante recordar que dentro de esta varible hay una tabla, por eso debo       CASTEARLO al tipo de dato DATATABLE. 
+ //3. Por ultimo le agrego el DATABIND(); creo que era para que podamos visualizar los datos arrojados en el grid.
+
+
+
+
+******************** ELIMINAR ELEMENTOS DE UNA LISTA ****************
+
+Ya en el App2, Click en el boton Eliminar, ya en el btnEliminar_Click() declaro una variable SESSION["tabla"] y lo igualo a NULL, como tambien al GRIDVIEW esto elimina todo el contenido que haga sobre la variable SESSION: 
+
+protected void btnEliminar_Click(object sender, EventArgs e)
+{
+ SESSION["tabla"] = null;
+ grdPersonas.DataSource = null;
+ grdPersonas.DataBind(); 
 }
 
