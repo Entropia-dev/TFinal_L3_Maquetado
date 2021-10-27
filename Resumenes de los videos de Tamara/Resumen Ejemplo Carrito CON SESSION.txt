@@ -111,3 +111,5 @@ protected void btnEliminar_Click(object sender, EventArgs e)
  grdPersonas.DataBind(); 
 }
 
+
+IMPORTANTE: tanto a una variable SESSION como APLICATION se le puede guardar cualquier tipo de dato, tabla , listas. 
