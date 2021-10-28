@@ -12,6 +12,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
+    <form id="form1" runat="server">
     <nav class="navbar navbar-light bg-crema">
       <div class="container">
         <a class="navbar-brand" href="Index.aspx">
@@ -21,7 +22,8 @@
           <%--<div class="container">--%>
           <ul class="nav justify-content-center">
               <li class="nav-item">
-                    Ingresado como: <asp:Label ID="UsuarioLogueado" runat="server">Visitante</asp:Label>  
+                    Ingresado como: 
+                    <asp:Label ID="lblUsuario" runat="server"></asp:Label>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Clientes</a>
@@ -30,16 +32,15 @@
                 <a class="nav-link" href="Franquisias.aspx">Franquicias</a>
               </li>
               <li class="nav-item">
-                  Ingresá
+                 <a class="nav-link" href="Logiin.aspx">Registrate</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="Productoss.aspx">Productos</a>
               </li>
             </ul>
-            <%--</div>--%>
+          <%--</div>--%>
       </div>
     </nav>
-    <form id="form1" runat="server">
         <div class="container">
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
