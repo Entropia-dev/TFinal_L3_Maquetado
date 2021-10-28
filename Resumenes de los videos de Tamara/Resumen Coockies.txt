@@ -1,0 +1,3 @@
+¿QUE SON LAS COOKIES? 
+
+son pequeños archivos que se va guardando en nuestra pagina. El punto negativo es que los usuarios desactivan las cookies generando una disfuncion de estas. Sirven, por ejemplo, para guardar un usuario y contraseña en el navegador.
