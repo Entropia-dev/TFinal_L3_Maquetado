@@ -6,7 +6,7 @@
         <div class="col"></div>
         <div class="col login">
         <h1 class="h3 mb-3 fw-normal text-center">Nuestros productos</h1>
-            <asp:ListView ID="ListView1" runat="server" DataSourceID="SqlDataSource1" GroupItemCount="3">
+            <asp:ListView ID="ListView1" runat="server" DataSourceID="SqlDataSource1" GroupItemCount="4">
                 <AlternatingItemTemplate>
                     <td runat="server" style="background-color: #FFFFFF; color: #284775;">Stock:
                         <asp:Label ID="StockLabel" runat="server" Text='<%# Eval("Stock") %>' />
