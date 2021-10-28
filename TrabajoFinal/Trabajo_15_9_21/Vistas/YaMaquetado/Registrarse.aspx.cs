@@ -24,6 +24,7 @@ namespace Vistas.YaMaquetado
             //hay que validar que el correo electronico no este en uso por que sino crashea.
 
 
+
             int flag = 0;
             //se usa una bandera para validar que el alias ingresado sea distinto de admin
             if(txtAlias.Text == "admin" || txtAlias.Text =="ADMIN" || txtAlias.Text == "ADMINISTRADOR " ||
@@ -32,8 +33,10 @@ namespace Vistas.YaMaquetado
                 flag++;
             }
 
+    
+
             Boolean estado = false;
-            estado = neg.agregarCliente(txtDni.Text, txtNombre.Text, txtApellido.Text, txtDireccion.Text, txtGenero.Text, txtAlias.Text, txtCorreo.Text);
+        estado = neg.agregarCliente(txtDni.Text, txtNombre.Text, txtApellido.Text, txtDireccion.Text, ddlGenero.Text , txtAlias.Text, txtCorreo.Text);
 
      
             Boolean estado2 = false;
