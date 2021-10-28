@@ -11,7 +11,13 @@ namespace Vistas.YaMaquetado
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["Alias"] != null)
+            {
+                // hay informacion en la variable session
 
+                lblUsuario.Text = Session["Alias"].ToString();
+
+            }
         }
     }
 }
