@@ -24,7 +24,7 @@
                 <li class="nav-item">
                 
                     Ingresado como:&nbsp;&nbsp;&nbsp;
-                    <asp:Label ID="UsuarioLogueado" runat="server">Visitante</asp:Label>
+                    <asp:Label ID="lblUsuario" runat="server"></asp:Label>
                 
               </li>
               <li class="nav-item">
