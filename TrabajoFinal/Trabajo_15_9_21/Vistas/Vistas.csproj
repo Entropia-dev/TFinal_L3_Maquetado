@@ -260,21 +260,21 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="YaMaquetado\Imagenes1\brandi_blanco.png" />
-    <Content Include="YaMaquetado\Imagenes1\panel_3d.png" />
-    <Content Include="YaMaquetado\Imagenes1\panel_3d_1.png" />
-    <Content Include="YaMaquetado\Imagenes1\panel_3d_2.png" />
-    <Content Include="YaMaquetado\Imagenes1\panel_3d_3.png" />
-    <Content Include="YaMaquetado\Imagenes1\revestimiento_beige.png" />
-    <Content Include="YaMaquetado\Imagenes1\revestimiento_ceramica_negro.png" />
-    <Content Include="YaMaquetado\Imagenes1\revestimiento_cocina_negro.png" />
-    <Content Include="YaMaquetado\Imagenes1\revestimiento_pared_negro.png" />
-    <Content Include="YaMaquetado\Imagenes1\revestimiento_pvc.png" />
-    <Content Include="YaMaquetado\Imagenes1\simil_ladrillo.png" />
-    <Content Include="YaMaquetado\Imagenes1\simil_madera.png" />
-    <Content Include="YaMaquetado\Imagenes1\simil_piedra.png" />
-    <Content Include="YaMaquetado\Imagenes1\simil_piedra_1.png" />
-    <Content Include="venecitas_azules.png" />
+    <Content Include="1.png" />
+    <Content Include="2.png" />
+    <Content Include="3.png" />
+    <Content Include="4.png" />
+    <Content Include="5.png" />
+    <Content Include="6.png" />
+    <Content Include="7.png" />
+    <Content Include="8.png" />
+    <Content Include="9.png" />
+    <Content Include="10.png" />
+    <Content Include="11.png" />
+    <Content Include="12.png" />
+    <Content Include="13.png" />
+    <Content Include="14.png" />
+    <Content Include="15.png" />
     <Content Include="YaMaquetado\AdminPresupuestos.aspx" />
     <Content Include="YaMaquetado\AdminProductos.aspx" />
     <Content Include="YaMaquetado\AdminVentas.aspx" />
@@ -305,7 +305,6 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="YaMaquetado\Imagenes1\packages.config" />
     <Content Include="TrabajoIntegradorLab3.csproj" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
