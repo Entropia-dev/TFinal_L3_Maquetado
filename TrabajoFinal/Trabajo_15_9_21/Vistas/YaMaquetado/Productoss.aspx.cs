@@ -13,5 +13,18 @@ namespace Vistas.YaMaquetado
         {
 
         }
+
+
+        protected void ListView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void Button5_Click(object sender, EventArgs e)
+        {
+            //   SqlDataSource1.SelectCommand = "SELECT [Stock], [PU_Pro], [Descripcion], [url], [Categoria] FROM [Productos] where  [Estado] = 'True' and Where [Descripcion] LIKE '%"+txtProductos.Text+"%'";
+            // SE NECESITA ADAPTAR LA SIGUIENTE CONSULTA SELECT [Stock], [PU_Pro], [Descripcion], [url], [Categoria] FROM [Productos] where  [Estado] = 'True' and Descripcion like '%rev%'
+            // REV TIENE QUE SER EL TEXTO INGRESADO EN EL TXTBUSCAR.
+        }
     }
 }

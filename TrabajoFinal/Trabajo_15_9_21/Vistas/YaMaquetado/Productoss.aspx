@@ -6,7 +6,7 @@
         <div class="col"></div>
         <div class="col login">
         <h1 class="h3 mb-3 fw-normal text-center">Nuestros productos</h1>
-            <asp:ListView ID="ListView1" runat="server" DataSourceID="SqlDataSource1" GroupItemCount="4">
+            <asp:ListView ID="ListView1" runat="server" DataSourceID="SqlDataSource1" GroupItemCount="4" OnSelectedIndexChanged="ListView1_SelectedIndexChanged">
                 <AlternatingItemTemplate>
                     <td runat="server" style="background-color: #FFFFFF; color: #284775;">Stock:
                         <asp:Label ID="StockLabel" runat="server" Text='<%# Eval("Stock") %>' />
@@ -125,7 +125,13 @@
                         <br /></td>
                 </SelectedItemTemplate>
             </asp:ListView>
-            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:RevestimientoaytConnectionString %>" SelectCommand="SELECT [Stock], [PU_Pro], [Descripcion], [url], [Categoria] FROM [Productos]"></asp:SqlDataSource>
+            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:RevestimientoaytConnectionString %>" SelectCommand="SELECT [Stock], [PU_Pro], [Descripcion], [url], [Categoria] FROM [Productos] where  [Estado] = 'True'"></asp:SqlDataSource>
+            <br />
+            <br />
+            Buscar productos :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:TextBox ID="txtProductos" runat="server"></asp:TextBox>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:Button ID="BtnBuscar" runat="server" OnClick="Button5_Click" Text="Buscar" Width="174px" />
         </div>
         <div class="col"></div>
     </div>
