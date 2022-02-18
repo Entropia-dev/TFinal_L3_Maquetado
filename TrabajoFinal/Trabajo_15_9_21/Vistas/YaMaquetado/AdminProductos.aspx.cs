@@ -85,8 +85,9 @@ namespace Vistas.YaMaquetado
 
         protected void grdProdAdmin_RowUpdating(object sender, GridViewUpdateEventArgs e)
         {
+            // OBTIENE UNA TABLA Y LO 
             //cuando se da click sobre el boton actualizar.
-            //necesito buscar los datos del edit item template.
+            //necesito buscar los datos del edit item template (QUE SON LOS QUE ESTOY AGREGANDO).
             //cargo en strings con el siguiente formato
             //String + (nombre de variable) = (formato del control dibujado)nombre del control[ubicacion del control]("nombre del control").text
 
@@ -112,6 +113,7 @@ namespace Vistas.YaMaquetado
             prod.set_categoria(s_Categoria);
             prod.set_descripcion(s_Descripcion);
             prod.set_url_imagen(s_Url);
+            prod.set_estado(Convert.ToBoolean(s_Estado));
          
 
             //tiene 6 campos que cargan un objeto

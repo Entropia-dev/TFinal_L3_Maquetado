@@ -28,3 +28,9 @@ D:\Program_Files\Ghost\TFinal_L3_Maquetado\TrabajoFinal\Trabajo_15_9_21\Entidade
 D:\Program_Files\Ghost\TFinal_L3_Maquetado\TrabajoFinal\Trabajo_15_9_21\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
 D:\Program_Files\Ghost\TFinal_L3_Maquetado\TrabajoFinal\Trabajo_15_9_21\Entidades\obj\Debug\Entidades.dll
 D:\Program_Files\Ghost\TFinal_L3_Maquetado\TrabajoFinal\Trabajo_15_9_21\Entidades\obj\Debug\Entidades.pdb
+C:\Users\Usuario1\Documents\GitHub\TFinal_L3_Maquetado\TrabajoFinal\Trabajo_15_9_21\Entidades\bin\Debug\Entidades.dll
+C:\Users\Usuario1\Documents\GitHub\TFinal_L3_Maquetado\TrabajoFinal\Trabajo_15_9_21\Entidades\bin\Debug\Entidades.pdb
+C:\Users\Usuario1\Documents\GitHub\TFinal_L3_Maquetado\TrabajoFinal\Trabajo_15_9_21\Entidades\obj\Debug\Entidades.csproj.AssemblyReference.cache
+C:\Users\Usuario1\Documents\GitHub\TFinal_L3_Maquetado\TrabajoFinal\Trabajo_15_9_21\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\Usuario1\Documents\GitHub\TFinal_L3_Maquetado\TrabajoFinal\Trabajo_15_9_21\Entidades\obj\Debug\Entidades.dll
+C:\Users\Usuario1\Documents\GitHub\TFinal_L3_Maquetado\TrabajoFinal\Trabajo_15_9_21\Entidades\obj\Debug\Entidades.pdb
