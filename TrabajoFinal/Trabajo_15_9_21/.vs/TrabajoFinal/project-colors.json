@@ -1,0 +1,31 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "f525b29b-cce5-408f-9772-989abe32bfbd": {
+      "ProjectGuid": "f525b29b-cce5-408f-9772-989abe32bfbd",
+      "DisplayName": "Vistas",
+      "ColorIndex": 0
+    },
+    "6ab75cff-6991-4889-9ef6-f550b0ab5442": {
+      "ProjectGuid": "6ab75cff-6991-4889-9ef6-f550b0ab5442",
+      "DisplayName": "Dao",
+      "ColorIndex": 1
+    },
+    "d135ddfb-5583-450c-816f-ab3e938186b9": {
+      "ProjectGuid": "d135ddfb-5583-450c-816f-ab3e938186b9",
+      "DisplayName": "Entidades",
+      "ColorIndex": 2
+    },
+    "43a9a9c6-0f1e-49f2-a136-7f9abd480ee9": {
+      "ProjectGuid": "43a9a9c6-0f1e-49f2-a136-7f9abd480ee9",
+      "DisplayName": "Negocio",
+      "ColorIndex": 3
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Archivos varios",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 4
+}
