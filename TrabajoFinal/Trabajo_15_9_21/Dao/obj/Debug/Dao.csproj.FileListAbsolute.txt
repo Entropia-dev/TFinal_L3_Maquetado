@@ -56,8 +56,8 @@ C:\Users\Usuario1\Documents\GitHub\TFinal_L3_Maquetado\TrabajoFinal\Trabajo_15_9
 C:\Users\Usuario1\Documents\GitHub\TFinal_L3_Maquetado\TrabajoFinal\Trabajo_15_9_21\Dao\bin\Debug\Dao.pdb
 C:\Users\Usuario1\Documents\GitHub\TFinal_L3_Maquetado\TrabajoFinal\Trabajo_15_9_21\Dao\bin\Debug\Entidades.dll
 C:\Users\Usuario1\Documents\GitHub\TFinal_L3_Maquetado\TrabajoFinal\Trabajo_15_9_21\Dao\bin\Debug\Entidades.pdb
-C:\Users\Usuario1\Documents\GitHub\TFinal_L3_Maquetado\TrabajoFinal\Trabajo_15_9_21\Dao\obj\Debug\Dao.csprojAssemblyReference.cache
 C:\Users\Usuario1\Documents\GitHub\TFinal_L3_Maquetado\TrabajoFinal\Trabajo_15_9_21\Dao\obj\Debug\Dao.csproj.CoreCompileInputs.cache
 C:\Users\Usuario1\Documents\GitHub\TFinal_L3_Maquetado\TrabajoFinal\Trabajo_15_9_21\Dao\obj\Debug\Dao.csproj.CopyComplete
 C:\Users\Usuario1\Documents\GitHub\TFinal_L3_Maquetado\TrabajoFinal\Trabajo_15_9_21\Dao\obj\Debug\Dao.dll
 C:\Users\Usuario1\Documents\GitHub\TFinal_L3_Maquetado\TrabajoFinal\Trabajo_15_9_21\Dao\obj\Debug\Dao.pdb
+C:\Users\Usuario1\Documents\GitHub\TFinal_L3_Maquetado\TrabajoFinal\Trabajo_15_9_21\Dao\obj\Debug\Dao.csproj.AssemblyReference.cache
